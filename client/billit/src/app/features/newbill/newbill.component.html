@@ -1,0 +1,202 @@
+<app-view-title title="New Bill"></app-view-title>
+
+<nb-card [nbSpinner]="loading" nbSpinnerStatus="info" class="shadow slide-in-bck-center">
+    <nb-card-body>
+        <div class="container">
+
+            <form  [formGroup]="billForm">
+                <div class="row">
+                    <div class="col-md-auto">
+                        <div class="form-group">
+                            <label for="customer">Customer:</label>
+                            <input type="text" 
+                                   nbInput 
+                                   class="form-control" 
+                                   formControlName="customer" 
+                                   placeholder="Enter customer"
+                                   maxlength="150"
+                                   [status]="submit && f.customer.invalid ? 'danger' : ''">
+
+                            <ng-container *ngIf="submit && f.customer.invalid">
+                                <p class="caption status-danger" *ngIf="f.customer.errors?.required">
+                                    Customer is required!
+                                </p>
+                            </ng-container>                         
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <div class="form-group">
+                            <label for="totalItems">Total items:</label>
+                            <input type="text" 
+                                   nbInput 
+                                   class="form-control" 
+                                   placeholder="Total items"
+                                   #totalItems
+                                   disabled>                       
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <div class="form-group">
+                            <label for="subTotal">Sub total:</label>
+                            <input type="text" 
+                                   nbInput 
+                                   class="form-control" 
+                                   placeholder="Sub total"
+                                   #subTotal
+                                   [textMask]="{mask: mask.currency, guide: false}"
+                                   disabled>                       
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <div class="form-group">
+                            <label for="totalTaxes">Total taxes:</label>
+                            <input type="text" 
+                                   nbInput 
+                                   class="form-control" 
+                                   placeholder="Total taxes"
+                                   #totalTaxes
+                                   [textMask]="{mask: mask.currency, guide: false}"
+                                   disabled>                       
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <div class="form-group">
+                            <label for="total">Total bill:</label>
+                            <input type="text" 
+                                   nbInput 
+                                   class="form-control" 
+                                   placeholder="Total"
+                                   #total
+                                   [textMask]="{mask: mask.currency, guide: false}"
+                                   disabled>                       
+                        </div>
+                    </div>
+
+                </div>
+                <label for="items">Items:</label>
+                <div class="items">
+
+                    <div formArrayName="items" 
+                         [class]="i === 0 ? 'first-row' : ''" 
+                         *ngFor="let item of formItems.controls; let i = index;">
+                        <div [formGroupName]="i" class="row form-group">
+                            <div class="row col-11">
+
+                                <div class="col-md-auto mw-20">
+                                    <input type="text" 
+                                           nbInput 
+                                           class="form-control" 
+                                           formControlName="name"  
+                                           [attr.disabled]="i > 0 ? '' : null" 
+                                           maxlength="150"
+                                           placeholder="Item name"
+                                           [status]="addingItem && getItem(i, 'name').invalid ? 'danger' : ''">
+
+                                    <ng-container *ngIf="addingItem && getItem(i, 'name').invalid">
+                                        <p class="caption status-danger" *ngIf="getItem(i, 'name').errors?.required">
+                                            Item name is required!
+                                        </p>
+                                    </ng-container>               
+                                </div>
+
+                                <div class="col-md-auto mw-20">
+                                    <input type="text" 
+                                           nbInput 
+                                           class="form-control" 
+                                           formControlName="price" 
+                                           [attr.disabled]="i > 0 ? '' : null" 
+                                           placeholder="Item price"
+                                           [status]="addingItem && getItem(i, 'price').invalid ? 'danger' : ''"
+                                           [textMask]="{mask: mask.currency, guide: false}">
+
+                                    <ng-container *ngIf="addingItem && getItem(i, 'price').invalid">
+                                        <p class="caption status-danger" *ngIf="getItem(i, 'price').errors?.required">
+                                            Item price is required!
+                                        </p>
+                                    </ng-container>
+                                </div>
+
+                                <div class="col-md-auto mw-20">
+                                    <input type="text" 
+                                           nbInput 
+                                           class="form-control" 
+                                           formControlName="tax" 
+                                           [attr.disabled]="i > 0 ? '' : null" 
+                                           placeholder="Item tax"
+                                           [status]="addingItem && getItem(i, 'tax').invalid ? 'danger' : ''"
+                                           [textMask]="{mask: mask.percentage, guide: false}">
+
+                                    <ng-container *ngIf="addingItem && getItem(i, 'tax').invalid">
+                                        <p class="caption status-danger" *ngIf="getItem(i, 'tax').errors?.required">
+                                            Item tax is required!
+                                        </p>
+                                    </ng-container>
+                                </div>
+
+                                <div class="col-md-auto mw-20">
+                                    <input type="text" 
+                                           nbInput 
+                                           class="form-control"
+                                           formControlName="numberItems" 
+                                           [attr.disabled]="i > 0 ? '' : null" 
+                                           placeholder="Number of items"
+                                           [textMask]="{mask: mask.integer, guide: false}">
+
+                                        <ng-container *ngIf="addingItem && getItem(i, 'numberItems').invalid">
+                                            <p class="caption status-danger" *ngIf="getItem(i, 'numberItems').errors?.required">
+                                                Number of items is required!
+                                            </p>
+                                        </ng-container>
+                                </div>
+
+                                <div class="col-md-auto mw-20">
+                                    <input type="text" 
+                                           nbInput 
+                                           class="form-control" 
+                                           placeholder="Total item"                                        
+                                           formControlName="totalItem"
+                                           [attr.disabled]="''"
+                                           [textMask]="{mask: mask.currency, guide: false}">
+                                </div>
+
+                            </div>
+                            <div class="row col">
+
+                                <div class="col-md-auto">
+                                    <button nbButton 
+                                            status="primary" 
+                                            (click)="addItem()" 
+                                            *ngIf="i === 0"
+                                            [disabled]="formItems.invalid">
+                                        <i class="fa fa-plus fa-lg"></i>
+                                    </button>
+                                    <button nbButton 
+                                            status="danger" 
+                                            (click)="removeItem(i)" 
+                                            *ngIf="i > 0">
+                                        <i class="fa fa-minus fa-lg"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nb-card-body>
+    <nb-card-footer>
+
+        <button nbButton 
+                status="primary" 
+                (click)="billIt()"  
+                [disabled]="f.customer.invalid || formItems.controls.length === 1">
+            Bill It
+        </button>
+
+    </nb-card-footer>
+</nb-card>

@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="" title="Billit">
+  <a href="https://github.com/megazordranger/billit" title="Billit">
     <img alt="billit logo" src=""/>
   </a>
   <br />

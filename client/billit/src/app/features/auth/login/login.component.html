@@ -1,0 +1,74 @@
+<h1 id="title" class="title">Login</h1>
+
+<nb-alert *ngIf="errors?.length" outline="danger" role="alert">
+  <p class="alert-title"><b>An error occurred</b></p>
+  <ul class="alert-message-list">
+    <li *ngFor="let error of errors" class="alert-message">{{ error }}</li>
+  </ul>
+</nb-alert>
+
+<form (ngSubmit)="login()" [formGroup]="loginForm" aria-labelledby="title">
+
+  <div class="form-control-group">
+    <label class="label" for="login">Username or email:</label>
+    <input nbInput
+           formControlName="login"
+           placeholder="Dirección de correo"
+           fullWidth
+           [textMask]="{mask: mask, guide: false}"
+           [status]="((f.login.dirty || f.login.touched) && f.login.invalid) ? 'danger' : ''">
+    <ng-container *ngIf="(f.login.dirty || f.login.touched) && f.login.invalid">
+      <p class="caption status-danger" *ngIf="f.login.errors?.required">
+        Username or email is required!
+      </p>
+      <p class="caption status-danger" *ngIf="f.login.errors?.noWhitespaceRequired">
+        Whitespaces are not allowed!
+      </p>
+      <p class="caption status-danger" *ngIf="f.login.errors?.minlength || f.login.errors?.maxlength">
+        Login mshould contain between {{ f.login.errors?.minlength?.requiredLength }} and {{ f.login.errors?.maxnlength?.requiredLength }} characters!
+      </p>
+   </ng-container>
+  </div>
+
+  <div class="form-control-group">
+    <label class="label" for="password">Password:</label>
+    <input nbInput
+           type="password"
+           formControlName="password"
+           placeholder="Password"
+           fullWidth
+           [status]="((f.password.dirty || f.password.touched) && f.password.invalid) ? 'danger' : ''">
+    <ng-container *ngIf="(f.password.dirty || f.password.touched) && f.password.invalid">
+      <p class="caption status-danger" *ngIf="f.password.errors?.required">
+        Password is required!
+      </p>
+      <p class="caption status-danger" *ngIf="f.password.errors?.minlength">
+        Password must contain at least {{ f.password.errors?.minlength?.requiredLength }} characters!
+      </p>
+    </ng-container>
+  </div>
+
+  <button nbButton
+          fullWidth
+          status="primary"
+          [nbSpinner]="loading" 
+          nbSpinnerStatus="primary"
+          [disabled]="!loginForm.valid">
+    Log in
+  </button>
+
+</form>
+
+<section class="links" aria-label="Social sign in">
+  or enter with:
+  <div class="socials pointer">
+    <nb-icon icon="google" pack="eva" (click)="signInWithGoogle()"></nb-icon>
+  </div>
+</section>
+
+<section class="another-action" aria-label="Register">
+  Don't have an account? <a class="text-link" routerLink="../register">Register</a>
+</section>
+<section class="another-action" aria-label="Contact">
+  <a class="text-link" routerLink="../contact">Contact</a>
+</section>

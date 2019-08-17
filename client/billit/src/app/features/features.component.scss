@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > div {
+    align-self: center;
+}
+
+.sidebar-toggle {
+    padding-right: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.logo {
+    padding: 0 1.25rem;
+    border-left: 1px solid #edf1f7;
+    font-size: 1.75rem;
+    font-family: 'Fjalla One', sans-serif;
+}

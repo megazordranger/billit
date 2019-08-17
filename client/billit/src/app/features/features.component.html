@@ -1,0 +1,45 @@
+<nb-layout>
+
+    <nb-layout-header fixed>
+         <!-- Insert header here -->
+        <div class="header">
+            <div>
+                <a class="sidebar-toggle">
+                    <nb-icon icon="menu-2-outline" pack="eva" (click)="toggle()"></nb-icon>
+                </a>
+                <span class="logo">billit</span>
+            </div>
+              
+            <span [title]="username">
+                <nb-user size="large"
+                        [name]="username"
+                        showTitle=false
+                        showName=false
+                        [nbPopover]="userComponent"
+                        nbPopover="Hover Mode" 
+                        nbPopoverTrigger="hover"
+                        nbPopoverPlacement="bottom">
+                </nb-user>
+            </span>
+        </div>
+    </nb-layout-header>
+
+    <nb-sidebar>
+        <nb-menu [items]="menu"></nb-menu>
+    </nb-sidebar>
+
+    <nb-layout-column>
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        <span class="created-by">
+            Copyright &copy; {{currentYear}} 
+            <b>
+                <a href="https://billit.tk" target="_blank">billit.tk</a>
+            </b>
+        </span>
+    </nb-layout-footer>
+
+</nb-layout>
+  

@@ -1,0 +1,12 @@
+<div class="container">
+    <nb-card class="shadow">
+        <nb-card-header>Delete Bill</nb-card-header>
+        <nb-card-body>
+            <p>Are you sure to delete bill #{{ id }}?</p>
+        </nb-card-body>
+        <nb-card-footer>
+            <button nbButton status="danger" (click)="delete()">Delete</button>
+            <button nbButton status="info" (click)="cancel()">Cancel</button>
+        </nb-card-footer>
+    </nb-card>
+</div>

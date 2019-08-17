@@ -1,0 +1,62 @@
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
+/* You can add global styles to this file, and also import other style files */
+
+// ███████╗████████╗██╗   ██╗██╗     ███████╗███████╗
+// ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝██╔════╝
+// ███████╗   ██║    ╚████╔╝ ██║     █████╗  ███████╗
+// ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝  ╚════██║
+// ███████║   ██║      ██║   ███████╗███████╗███████║
+// ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝
+
+/** width **/
+
+@for $i from 1 through 100 {
+    .mw-#{$i} { min-width: $i * 1%; }
+}
+
+/** links **/
+
+a:link { 
+  text-decoration: none; 
+}
+
+a:link:hover { 
+  text-decoration: underline; 
+}
+
+/** ng2-smart-table **/
+
+ng2-smart-table-pager span .sr-only {
+  display: none;
+}
+
+/** auth background **/
+
+@import 'assets/styles/auth-background.scss';
+
+
+/** register checkbox **/
+
+nb-auth app-register nb-checkbox nb-icon svg {
+  vertical-align: baseline;
+}
+
+/** policies tabs **/
+
+nb-auth app-policies nb-route-tabset > ul{
+  padding: 0px 40px;
+}
+
+/** cursor **/
+
+.pointer {
+  cursor: pointer;
+}

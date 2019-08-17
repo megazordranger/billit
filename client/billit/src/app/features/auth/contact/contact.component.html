@@ -1,0 +1,11 @@
+<nb-card>
+    <nb-card-header>
+        Contact
+    </nb-card-header>
+    <nb-list>
+        <nb-list-item *ngFor="let contact of contacts">
+            {{ contact.source }}:
+            <a class="text-link" [href]="contact.link" [target]="contact.target">{{ contact.text }}</a>
+        </nb-list-item>
+    </nb-list>
+</nb-card>
