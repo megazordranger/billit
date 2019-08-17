@@ -1,16 +1,16 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">
-  <a href="https://github.com/megazordranger/billit" title="Billit">
-    <img alt="billit logo" src="https://raw.githubusercontent.com/megazordranger/billit/master/client/billit/src/assets/img/logo.png"/>
-  </a>
-  <br />
-  <p align="center">
-    <a href="https://billit.tk/">Live Demo</a>
-  </p>
+    <a href="https://github.com/megazordranger/billit" title="Billit">
+        <img alt="billit logo" src="https://raw.githubusercontent.com/megazordranger/billit/master/client/billit/src/assets/img/logo.png"/>
+    </a>
+    <br />
 </h1>
+<p align="center">
+    <a href="https://billit.tk/">Live Demo</a>
+</p>
 
 <p align="center">
-  Bill generator
+    Bill generator
 </p>
 
 <!-- PROJECT SHIELDS -->
