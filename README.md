@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/megazordranger/billit" title="Billit">
-    <img alt="billit logo" src=""/>
+    <img alt="billit logo" src="https://raw.githubusercontent.com/megazordranger/billit/master/client/billit/src/assets/img/logo.png"/>
   </a>
   <br />
   Billit
