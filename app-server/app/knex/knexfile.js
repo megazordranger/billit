@@ -4,10 +4,10 @@ module.exports = {
     development: {
         client: 'pg',
         connection: {
-            host : 'bnkojktuinmg60x6a7bl-postgresql.services.clever-cloud.com',
-            user : 'ueliarjyz8j101rcygum',
-            password : 'qYl57GTfDuOpI8gVwYPx',
-            database : 'bnkojktuinmg60x6a7bl'
+            host : 'localhost',
+            user : 'postgres',
+            password : 'postgres',
+            database : 'postgres'
         },
         migrations: {
             directory: `${__dirname}\\migrations`
@@ -17,10 +17,10 @@ module.exports = {
     production: {
         client: 'pg',
         connection: {
-            host : 'bnkojktuinmg60x6a7bl-postgresql.services.clever-cloud.com',
-            user : 'ueliarjyz8j101rcygum',
-            password : 'qYl57GTfDuOpI8gVwYPx',
-            database : 'bnkojktuinmg60x6a7bl'
+            host : '<production_host>',
+            user : '<production_user>',
+            password : '<production_password>',
+            database : '<production_database>'
         },
         migrations: {
             directory: `${__dirname}\\migrations`
