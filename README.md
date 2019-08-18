@@ -74,6 +74,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Megazordranger - admin@billit.com
+Megazordranger - admin@billit.tk
 
 Project Link: [https://github.com/megazordranger/billit](https://github.com/megazordranger/billit)
