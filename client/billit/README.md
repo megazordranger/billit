@@ -1,9 +1,8 @@
 # Billit client
 Fronent of billit application
 
-
-## Serve
-
+## Test
 For test run following command:
 
+    npm install
     npm run start

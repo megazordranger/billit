@@ -6,11 +6,10 @@
     <br />
 </h1>
 <p align="center">
-    <a href="https://billit.tk/">Live Demo</a>
-</p>
-
-<p align="center">
     Bill generator
+</p>
+<p align="center">
+    <a href="https://billit.tk/">Live Demo</a>
 </p>
 
 <!-- PROJECT SHIELDS -->
@@ -48,7 +47,7 @@ The app support:
 ### Built With
 
 * [Angular](https://angular.io/)
-* [Exoress](https://www.express.com/)
+* [Express](https://www.express.com/)
 * [Apollo](https://www.apollographql.com/)
 
 
