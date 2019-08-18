@@ -9,7 +9,7 @@
     Bill generator
 </p>
 <p align="center">
-    <a href="https://billit.tk/">Live Demo</a>
+    <a href="https://billit.tk/" target="_blank">Live Demo</a>
 </p>
 
 
