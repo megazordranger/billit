@@ -47,7 +47,7 @@ The app support:
 ### Built With
 
 * [Angular](https://angular.io/)
-* [Express](https://www.express.com/)
+* [Express](https://expressjs.com/)
 * [Apollo](https://www.apollographql.com/)
 
 
