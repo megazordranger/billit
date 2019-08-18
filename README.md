@@ -58,7 +58,7 @@ The app support:
 * [Authentication GraphQl Schema](https://megazordranger.github.io/billit/auth-graphql-schema/)
 * [Application GraphQl Schema](https://megazordranger.github.io/billit/app-graphql-schema/)
 * [Authentication DB Schema - MongoDB](https://megazordranger.github.io/billit/auth-db-schema/authx.html)
-* [Application DB Schema- PostgreSQL](https://megazordranger.github.io/billit/app-db-schema/billit.html)
+* [Application DB Schema - PostgreSQL](https://megazordranger.github.io/billit/app-db-schema/billit.html)
 * [Original App Mockups](https://megazordranger.github.io/billit/mockups/billit.pdf)
 
 
