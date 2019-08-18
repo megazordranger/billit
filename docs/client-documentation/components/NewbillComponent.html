@@ -1,0 +1,2105 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>billit documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">billit documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>NewbillComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/newbill/newbill.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>New bill form component</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-newbill</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./newbill.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./newbill.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addingItem">addingItem</a>
+                            </li>
+                            <li>
+                                <a href="#billForm">billForm</a>
+                            </li>
+                            <li>
+                                <a href="#items">items</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mask">mask</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#submit">submit</a>
+                            </li>
+                            <li>
+                                <a href="#subTotal">subTotal</a>
+                            </li>
+                            <li>
+                                <a href="#total">total</a>
+                            </li>
+                            <li>
+                                <a href="#totalItems">totalItems</a>
+                            </li>
+                            <li>
+                                <a href="#totalTaxes">totalTaxes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addItem">addItem</a>
+                            </li>
+                            <li>
+                                <a href="#billIt">billIt</a>
+                            </li>
+                            <li>
+                                <a href="#createItem">createItem</a>
+                            </li>
+                            <li>
+                                <a href="#getItem">getItem</a>
+                            </li>
+                            <li>
+                                <a href="#getTotals">getTotals</a>
+                            </li>
+                            <li>
+                                <a href="#hideLoader">hideLoader</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#removeItem">removeItem</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader">showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#toInt">toInt</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#f">f</a>
+                                </li>
+                                <li>
+                                    <a href="#formItems">formItems</a>
+                                </li>
+                                <li>
+                                    <a href="#formValue">formValue</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, miscFunc: <a href="../injectables/MiscFunctionsService.html">MiscFunctionsService</a>, billService: <a href="../injectables/BillService.html">BillService</a>, errorService: <a href="../injectables/ShowErrorService.html">ShowErrorService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/features/newbill/newbill.component.ts:97</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Injection dependencies</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>miscFunc</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MiscFunctionsService.html" target="_self" >MiscFunctionsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>billService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BillService.html" target="_self" >BillService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>errorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ShowErrorService.html" target="_self" >ShowErrorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            addItem
+                        </b>
+                        <a href="#addItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addItem()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="211"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:211</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add new item to bill form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="billIt"></a>
+                    <span class="name">
+                        <b>
+                            billIt
+                        </b>
+                        <a href="#billIt"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>billIt()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Submit bill form value to database store</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createItem"></a>
+                    <span class="name">
+                        <b>
+                            createItem
+                        </b>
+                        <a href="#createItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createItem(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add new item to bill form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{
+    name: &#x27;&#x27;,
+    price: &#x27;&#x27;,
+    tax: &#x27;&#x27;,
+    numberItems: &#x27;&#x27;,
+    totalItem: &#x27;&#x27;
+  }</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItem"></a>
+                    <span class="name">
+                        <b>
+                            getItem
+                        </b>
+                        <a href="#getItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItem(index, control)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get specific bill item form control</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>control</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTotals"></a>
+                    <span class="name">
+                        <b>
+                            getTotals
+                        </b>
+                        <a href="#getTotals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTotals()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="277"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get and show totals and subtotals of bill</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ customer: any; items: any; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideLoader"></a>
+                    <span class="name">
+                        <b>
+                            hideLoader
+                        </b>
+                        <a href="#hideLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideLoader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Hide loading spinner</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create reactive bill form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeItem"></a>
+                    <span class="name">
+                        <b>
+                            removeItem
+                        </b>
+                        <a href="#removeItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeItem(index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Remove item of bill form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <b>
+                            showLoader
+                        </b>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showLoader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="318"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:318</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show loading spinner</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toInt"></a>
+                    <span class="name">
+                        <b>
+                            toInt
+                        </b>
+                        <a href="#toInt"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toInt(val)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="332"
+                            class="link-to-prism">src/app/features/newbill/newbill.component.ts:332</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Convert mask result string to int </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>val</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addingItem"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            addingItem</b>
+                            <a href="#addingItem"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/features/newbill/newbill.component.ts:89</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>State for adding new bill item process</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="billForm"></a>
+                        <span class="name">
+                            <b>
+                            billForm</b>
+                            <a href="#billForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/features/newbill/newbill.component.ts:73</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>New bill reactive form</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="items"></a>
+                        <span class="name">
+                            <b>
+                            items</b>
+                            <a href="#items"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormArray" target="_blank" >FormArray</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/features/newbill/newbill.component.ts:77</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Bill items reactive form array</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/features/newbill/newbill.component.ts:81</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>State for show/hide loading spinner</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mask"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            mask</b>
+                            <a href="#mask"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    currency: currencyMask,
+    percentage: percentageMask,
+    integer: integerMask
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/app/features/newbill/newbill.component.ts:93</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Masks store</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            submit</b>
+                            <a href="#submit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/app/features/newbill/newbill.component.ts:85</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Submition state</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subTotal"></a>
+                        <span class="name">
+                            <b>
+                            subTotal</b>
+                            <a href="#subTotal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;subTotal&#x27;, {static: false})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/features/newbill/newbill.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to input that show subtotal currency  billed </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="total"></a>
+                        <span class="name">
+                            <b>
+                            total</b>
+                            <a href="#total"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;total&#x27;, {static: false})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/features/newbill/newbill.component.ts:68</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to input that show total currency billed </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totalItems"></a>
+                        <span class="name">
+                            <b>
+                            totalItems</b>
+                            <a href="#totalItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;totalItems&#x27;, {static: false})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/features/newbill/newbill.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to input that show total items billed</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totalTaxes"></a>
+                        <span class="name">
+                            <b>
+                            totalTaxes</b>
+                            <a href="#totalTaxes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;totalTaxes&#x27;, {static: false})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/features/newbill/newbill.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to input that show total in taxes currency billed </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name"><b>f</b><a href="#f"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>f()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/features/newbill/newbill.component.ts:127</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for acces to bill form controls</p>
+</div>
+
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formItems"></a>
+                        <span class="name"><b>formItems</b><a href="#formItems"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formItems()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/app/features/newbill/newbill.component.ts:131</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for acces to bill items form controls</p>
+</div>
+
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formValue"></a>
+                        <span class="name"><b>formValue</b><a href="#formValue"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formValue()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/features/newbill/newbill.component.ts:135</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Getter for acces to bill form value</p>
+</div>
+
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, ElementRef } from &#x27;@angular/core&#x27;;
+import { Router  } from &#x27;@angular/router&#x27;;
+import { FormGroup, FormBuilder, FormArray, Validators } from &#x27;@angular/forms&#x27;;
+import createNumberMask from &#x27;text-mask-addons/dist/createNumberMask&#x27;;
+import { MiscFunctionsService } from &#x27;app/shared/services&#x27;;
+import { BillService, ShowErrorService } from &#x27;app/shared/services&#x27;;
+
+/**
+ * Shared mask configuration
+ */
+const maskOptions &#x3D; {
+  prefix: &#x27;&#x27;,
+  thousandsSeparatorSymbol: &#x27;.&#x27;,
+  decimalSymbol: &#x27;,&#x27;
+}
+
+/**
+ * Currency mask configuration
+ */
+const currencyMask &#x3D; createNumberMask({
+  suffix: &#x27; $&#x27;,
+  allowDecimal: true,
+  ...maskOptions
+});
+
+/**
+ * Percentage mask configuration 
+ */
+const percentageMask &#x3D; createNumberMask({
+  suffix: &#x27; %&#x27;,
+  allowDecimal: true,
+  ...maskOptions
+});
+
+/**
+ * Integer mask configuration
+ */
+const integerMask &#x3D; createNumberMask({
+  ...maskOptions
+})
+
+/**
+ * New bill form component
+ */
+@Component({
+  selector: &#x27;app-newbill&#x27;,
+  templateUrl: &#x27;./newbill.component.html&#x27;,
+  styleUrls: [&#x27;./newbill.component.scss&#x27;]
+})
+export class NewbillComponent implements OnInit {
+
+
+  /**
+   * Reference to input that show total items billed
+   */
+  @ViewChild(&#x27;totalItems&#x27;, {static: false}) totalItems: ElementRef;
+  /**
+   * Reference to input that show subtotal currency  billed 
+   */
+  @ViewChild(&#x27;subTotal&#x27;, {static: false}) subTotal: ElementRef;
+  /**
+   * Reference to input that show total in taxes currency billed 
+   */
+  @ViewChild(&#x27;totalTaxes&#x27;, {static: false}) totalTaxes: ElementRef;
+  /**
+   * Reference to input that show total currency billed 
+   */
+  @ViewChild(&#x27;total&#x27;, {static: false}) total: ElementRef;
+
+  /**
+   * New bill reactive form
+   */
+  billForm: FormGroup;
+  /**
+   * Bill items reactive form array
+   */
+  items: FormArray;
+  /**
+   * State for show/hide loading spinner
+   */
+  public loading: boolean &#x3D; false;
+  /**
+   * Submition state
+   */
+  public submit: boolean &#x3D; false;
+  /**
+   * State for adding new bill item process
+   */
+  public addingItem: boolean &#x3D; false; 
+  /**
+   * Masks store
+   */
+  public mask &#x3D; {
+    currency: currencyMask,
+    percentage: percentageMask,
+    integer: integerMask
+  }
+
+  /**
+   * Injection dependencies
+   */
+  constructor(
+    private router: Router,
+    private formBuilder: FormBuilder,
+    private miscFunc: MiscFunctionsService,
+    private billService: BillService,
+    private errorService: ShowErrorService,
+  ) { }
+
+  /**
+   * Create reactive bill form
+   */
+  ngOnInit() {
+    this.billForm &#x3D; this.formBuilder.group({
+      customer: [&#x27;&#x27;, [
+        Validators.required,
+        Validators.minLength(1),
+        Validators.maxLength(150),
+      ]],
+      items: this.formBuilder.array([ this.createItem() ])
+    });
+  }
+
+  /**
+   * Getter for acces to bill form controls
+   */
+  get f() { return this.billForm.controls; }
+  /**
+   * Getter for acces to bill items form controls
+   */
+  get formItems() { return &lt;FormArray&gt;this.billForm.get(&#x27;items&#x27;); }
+  /**
+   * Getter for acces to bill form value
+   */
+  get formValue() {
+    const bill: any &#x3D; this.miscFunc.copyObj(this.billForm.value);
+    bill.items.shift();
+    return bill;
+  }
+
+  /**
+   * Add new item to bill form
+   */
+  createItem(value &#x3D; {
+    name: &#x27;&#x27;,
+    price: &#x27;&#x27;,
+    tax: &#x27;&#x27;,
+    numberItems: &#x27;&#x27;,
+    totalItem: &#x27;&#x27;
+  }): FormGroup {
+
+    const fb: any &#x3D; this.formBuilder.group({
+      name: [ value.name, [
+        Validators.required,
+        Validators.maxLength(150),
+      ]],
+      price: [ value.price, [
+        Validators.required,
+      ]],
+      tax: [ value.tax, [
+        Validators.required,
+      ]],
+      numberItems: [ value.numberItems, [
+        Validators.required,
+      ]],
+      totalItem: [ value.totalItem, [
+        Validators.required,
+      ]],
+    });
+
+    const controls &#x3D; Object.keys(value);
+    controls.shift();
+
+    for(let control of controls) {
+      fb.get(control).valueChanges.subscribe(async val &#x3D;&gt; { 
+       
+        const value &#x3D; this.toInt(val);
+        const ctrl &#x3D; fb.get(control);
+        ctrl.value &#x3D; value;
+        await fb.value;
+
+        if(control !&#x3D;&#x3D; &#x27;totalItem&#x27;) {
+
+          const { price &#x3D; 0, tax &#x3D; 0, numberItems &#x3D; 0 } &#x3D; fb.value;
+          const totalItem &#x3D; (price * (tax/100 + 1) * numberItems).toFixed(2).replace(/\./, &#x27;,&#x27;);
+
+          fb.get(&#x27;totalItem&#x27;).patchValue(&#x27;&#x27;);
+          fb.get(&#x27;totalItem&#x27;).patchValue(totalItem);
+        }
+
+        if(control &#x3D;&#x3D;&#x3D; &#x27;numberItems&#x27; &amp;&amp; !value) {
+          ctrl.setErrors({});
+        }
+      });
+    }
+
+    return fb;
+  }
+
+  /**
+   * Get specific bill item form control
+   */
+  getItem(index, control){
+    const { controls }: any &#x3D; this.formItems.controls[index];
+    return controls[control];
+  }
+
+  /**
+   * Add new item to bill form
+   */
+  async addItem(): Promise&lt;void&gt; {
+    this.addingItem &#x3D; true;
+    if(this.formItems.invalid) return;
+    
+    this.addingItem &#x3D; false;
+    const value &#x3D; this.formItems.controls[0].value;
+
+    Object.keys(value).forEach((key, index) &#x3D;&gt; {
+      if(index) {
+        value[key] &#x3D; value[key].toString().replace(/\./, &#x27;,&#x27;);
+      }
+    });
+    this.formItems.push(this.createItem(value));
+    
+    const { controls }: any &#x3D; this.formItems.controls[0];
+    for(let control of Object.keys(controls)) {
+      await controls[control].patchValue(&#x27;&#x27;);
+    }
+    this.getTotals();
+  }
+
+  /**
+   * Remove item of bill form
+   */
+  removeItem(index): void {
+    this.items &#x3D; this.billForm.get(&#x27;items&#x27;) as FormArray;
+    this.items.removeAt(index);
+    this.getTotals();
+  }
+
+  /**
+   * Submit bill form value to database store
+   */
+  billIt() {
+    this.submit &#x3D; true;
+  
+    const bill &#x3D; this.getTotals();
+    const variables &#x3D; {
+      input: bill
+    }
+    
+    this.showLoader();
+    this.billService.createBill(variables).subscribe(({ data, errors }) &#x3D;&gt; {
+      this.hideLoader();
+
+      if(errors) {
+        console.log(errors);
+        this.errorService.show(errors);
+      } else {
+        this.submit &#x3D; false;
+        this.billForm.reset();
+        this.formItems.clear();
+        this.formItems.push(this.createItem());
+        this.router.navigateByUrl(&#x27;/dashboard&#x27;);
+      }
+
+    }, error &#x3D;&gt; {
+      this.hideLoader();
+      console.log(error);
+      this.errorService.showDefault();
+    });
+  }
+
+  /**
+   * Get and show totals and subtotals of bill
+   */
+  getTotals() {
+
+    const { customer, items } &#x3D; this.formValue;
+
+    let totalItems &#x3D; 0;
+    let total &#x3D; 0;
+    let subTotal &#x3D; 0;
+    let totalTaxes &#x3D; 0;
+
+    items.forEach(({ price, tax, numberItems, totalItem }, i) &#x3D;&gt; {
+
+      price &#x3D; this.toInt(price);
+      tax &#x3D; this.toInt(tax);
+      numberItems &#x3D; this.toInt(numberItems);
+      totalItem &#x3D; this.toInt(totalItem);
+
+      items[i].price &#x3D; price;
+      items[i].tax &#x3D; tax;
+      items[i].numberItems &#x3D; numberItems; 
+      items[i].totalItem &#x3D; totalItem; 
+      
+      totalItems +&#x3D; numberItems;
+      total &#x3D; +(total + price * (tax/100 + 1) * numberItems).toFixed(2);
+      subTotal &#x3D; +(subTotal + price * numberItems).toFixed(2);
+      totalTaxes &#x3D; +(totalTaxes + price * (tax/100) * numberItems).toFixed(2);
+    });
+
+    this.totalItems.nativeElement.value &#x3D; totalItems;
+    this.subTotal.nativeElement.value &#x3D; subTotal.toString().replace(/\./, &#x27;,&#x27;) + &#x27; $&#x27;;
+    this.totalTaxes.nativeElement.value &#x3D; totalTaxes.toString().replace(/\./, &#x27;,&#x27;) + &#x27; $&#x27;;
+    this.total.nativeElement.value &#x3D; total.toString().replace(/\./, &#x27;,&#x27;) + &#x27; $&#x27;;
+
+    return {
+      customer, 
+      items
+    }
+  }
+
+  /**
+   * Show loading spinner
+   */
+  showLoader() {
+    this.loading &#x3D; true;
+  }
+
+  /**
+   * Hide loading spinner
+   */
+  hideLoader() {
+    this.loading &#x3D; false;
+  }
+
+  /**
+   * Convert mask result string to int 
+   */
+  toInt(val) {
+    return +(val || &#x27;&#x27;).replace(/\.|\$|%/g, &#x27;&#x27;).replace(/,/g, &#x27;.&#x27;);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-view-title title&#x3D;&quot;New Bill&quot;&gt;&lt;/app-view-title&gt;
+
+&lt;nb-card [nbSpinner]&#x3D;&quot;loading&quot; nbSpinnerStatus&#x3D;&quot;info&quot; class&#x3D;&quot;shadow slide-in-bck-center&quot;&gt;
+    &lt;nb-card-body&gt;
+        &lt;div class&#x3D;&quot;container&quot;&gt;
+
+            &lt;form  [formGroup]&#x3D;&quot;billForm&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-auto&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                            &lt;label for&#x3D;&quot;customer&quot;&gt;Customer:&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;text&quot; 
+                                   nbInput 
+                                   class&#x3D;&quot;form-control&quot; 
+                                   formControlName&#x3D;&quot;customer&quot; 
+                                   placeholder&#x3D;&quot;Enter customer&quot;
+                                   maxlength&#x3D;&quot;150&quot;
+                                   [status]&#x3D;&quot;submit &amp;&amp; f.customer.invalid ? &#x27;danger&#x27; : &#x27;&#x27;&quot;&gt;
+
+                            &lt;ng-container *ngIf&#x3D;&quot;submit &amp;&amp; f.customer.invalid&quot;&gt;
+                                &lt;p class&#x3D;&quot;caption status-danger&quot; *ngIf&#x3D;&quot;f.customer.errors?.required&quot;&gt;
+                                    Customer is required!
+                                &lt;/p&gt;
+                            &lt;/ng-container&gt;                         
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-auto&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                            &lt;label for&#x3D;&quot;totalItems&quot;&gt;Total items:&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;text&quot; 
+                                   nbInput 
+                                   class&#x3D;&quot;form-control&quot; 
+                                   placeholder&#x3D;&quot;Total items&quot;
+                                   #totalItems
+                                   disabled&gt;                       
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-auto&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                            &lt;label for&#x3D;&quot;subTotal&quot;&gt;Sub total:&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;text&quot; 
+                                   nbInput 
+                                   class&#x3D;&quot;form-control&quot; 
+                                   placeholder&#x3D;&quot;Sub total&quot;
+                                   #subTotal
+                                   [textMask]&#x3D;&quot;{mask: mask.currency, guide: false}&quot;
+                                   disabled&gt;                       
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-auto&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                            &lt;label for&#x3D;&quot;totalTaxes&quot;&gt;Total taxes:&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;text&quot; 
+                                   nbInput 
+                                   class&#x3D;&quot;form-control&quot; 
+                                   placeholder&#x3D;&quot;Total taxes&quot;
+                                   #totalTaxes
+                                   [textMask]&#x3D;&quot;{mask: mask.currency, guide: false}&quot;
+                                   disabled&gt;                       
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-auto&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                            &lt;label for&#x3D;&quot;total&quot;&gt;Total bill:&lt;/label&gt;
+                            &lt;input type&#x3D;&quot;text&quot; 
+                                   nbInput 
+                                   class&#x3D;&quot;form-control&quot; 
+                                   placeholder&#x3D;&quot;Total&quot;
+                                   #total
+                                   [textMask]&#x3D;&quot;{mask: mask.currency, guide: false}&quot;
+                                   disabled&gt;                       
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+                &lt;label for&#x3D;&quot;items&quot;&gt;Items:&lt;/label&gt;
+                &lt;div class&#x3D;&quot;items&quot;&gt;
+
+                    &lt;div formArrayName&#x3D;&quot;items&quot; 
+                         [class]&#x3D;&quot;i &#x3D;&#x3D;&#x3D; 0 ? &#x27;first-row&#x27; : &#x27;&#x27;&quot; 
+                         *ngFor&#x3D;&quot;let item of formItems.controls; let i &#x3D; index;&quot;&gt;
+                        &lt;div [formGroupName]&#x3D;&quot;i&quot; class&#x3D;&quot;row form-group&quot;&gt;
+                            &lt;div class&#x3D;&quot;row col-11&quot;&gt;
+
+                                &lt;div class&#x3D;&quot;col-md-auto mw-20&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; 
+                                           nbInput 
+                                           class&#x3D;&quot;form-control&quot; 
+                                           formControlName&#x3D;&quot;name&quot;  
+                                           [attr.disabled]&#x3D;&quot;i &gt; 0 ? &#x27;&#x27; : null&quot; 
+                                           maxlength&#x3D;&quot;150&quot;
+                                           placeholder&#x3D;&quot;Item name&quot;
+                                           [status]&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;name&#x27;).invalid ? &#x27;danger&#x27; : &#x27;&#x27;&quot;&gt;
+
+                                    &lt;ng-container *ngIf&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;name&#x27;).invalid&quot;&gt;
+                                        &lt;p class&#x3D;&quot;caption status-danger&quot; *ngIf&#x3D;&quot;getItem(i, &#x27;name&#x27;).errors?.required&quot;&gt;
+                                            Item name is required!
+                                        &lt;/p&gt;
+                                    &lt;/ng-container&gt;               
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;col-md-auto mw-20&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; 
+                                           nbInput 
+                                           class&#x3D;&quot;form-control&quot; 
+                                           formControlName&#x3D;&quot;price&quot; 
+                                           [attr.disabled]&#x3D;&quot;i &gt; 0 ? &#x27;&#x27; : null&quot; 
+                                           placeholder&#x3D;&quot;Item price&quot;
+                                           [status]&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;price&#x27;).invalid ? &#x27;danger&#x27; : &#x27;&#x27;&quot;
+                                           [textMask]&#x3D;&quot;{mask: mask.currency, guide: false}&quot;&gt;
+
+                                    &lt;ng-container *ngIf&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;price&#x27;).invalid&quot;&gt;
+                                        &lt;p class&#x3D;&quot;caption status-danger&quot; *ngIf&#x3D;&quot;getItem(i, &#x27;price&#x27;).errors?.required&quot;&gt;
+                                            Item price is required!
+                                        &lt;/p&gt;
+                                    &lt;/ng-container&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;col-md-auto mw-20&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; 
+                                           nbInput 
+                                           class&#x3D;&quot;form-control&quot; 
+                                           formControlName&#x3D;&quot;tax&quot; 
+                                           [attr.disabled]&#x3D;&quot;i &gt; 0 ? &#x27;&#x27; : null&quot; 
+                                           placeholder&#x3D;&quot;Item tax&quot;
+                                           [status]&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;tax&#x27;).invalid ? &#x27;danger&#x27; : &#x27;&#x27;&quot;
+                                           [textMask]&#x3D;&quot;{mask: mask.percentage, guide: false}&quot;&gt;
+
+                                    &lt;ng-container *ngIf&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;tax&#x27;).invalid&quot;&gt;
+                                        &lt;p class&#x3D;&quot;caption status-danger&quot; *ngIf&#x3D;&quot;getItem(i, &#x27;tax&#x27;).errors?.required&quot;&gt;
+                                            Item tax is required!
+                                        &lt;/p&gt;
+                                    &lt;/ng-container&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;col-md-auto mw-20&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; 
+                                           nbInput 
+                                           class&#x3D;&quot;form-control&quot;
+                                           formControlName&#x3D;&quot;numberItems&quot; 
+                                           [attr.disabled]&#x3D;&quot;i &gt; 0 ? &#x27;&#x27; : null&quot; 
+                                           placeholder&#x3D;&quot;Number of items&quot;
+                                           [textMask]&#x3D;&quot;{mask: mask.integer, guide: false}&quot;&gt;
+
+                                        &lt;ng-container *ngIf&#x3D;&quot;addingItem &amp;&amp; getItem(i, &#x27;numberItems&#x27;).invalid&quot;&gt;
+                                            &lt;p class&#x3D;&quot;caption status-danger&quot; *ngIf&#x3D;&quot;getItem(i, &#x27;numberItems&#x27;).errors?.required&quot;&gt;
+                                                Number of items is required!
+                                            &lt;/p&gt;
+                                        &lt;/ng-container&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class&#x3D;&quot;col-md-auto mw-20&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; 
+                                           nbInput 
+                                           class&#x3D;&quot;form-control&quot; 
+                                           placeholder&#x3D;&quot;Total item&quot;                                        
+                                           formControlName&#x3D;&quot;totalItem&quot;
+                                           [attr.disabled]&#x3D;&quot;&#x27;&#x27;&quot;
+                                           [textMask]&#x3D;&quot;{mask: mask.currency, guide: false}&quot;&gt;
+                                &lt;/div&gt;
+
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;row col&quot;&gt;
+
+                                &lt;div class&#x3D;&quot;col-md-auto&quot;&gt;
+                                    &lt;button nbButton 
+                                            status&#x3D;&quot;primary&quot; 
+                                            (click)&#x3D;&quot;addItem()&quot; 
+                                            *ngIf&#x3D;&quot;i &#x3D;&#x3D;&#x3D; 0&quot;
+                                            [disabled]&#x3D;&quot;formItems.invalid&quot;&gt;
+                                        &lt;i class&#x3D;&quot;fa fa-plus fa-lg&quot;&gt;&lt;/i&gt;
+                                    &lt;/button&gt;
+                                    &lt;button nbButton 
+                                            status&#x3D;&quot;danger&quot; 
+                                            (click)&#x3D;&quot;removeItem(i)&quot; 
+                                            *ngIf&#x3D;&quot;i &gt; 0&quot;&gt;
+                                        &lt;i class&#x3D;&quot;fa fa-minus fa-lg&quot;&gt;&lt;/i&gt;
+                                    &lt;/button&gt;
+                                &lt;/div&gt;
+                                
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/nb-card-body&gt;
+    &lt;nb-card-footer&gt;
+
+        &lt;button nbButton 
+                status&#x3D;&quot;primary&quot; 
+                (click)&#x3D;&quot;billIt()&quot;  
+                [disabled]&#x3D;&quot;f.customer.invalid || formItems.controls.length &#x3D;&#x3D;&#x3D; 1&quot;&gt;
+            Bill It
+        &lt;/button&gt;
+
+    &lt;/nb-card-footer&gt;
+&lt;/nb-card&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./newbill.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.items {
+    max-height: calc(100vh - 360px);
+    min-height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.first-row {
+    position: sticky;
+    top: -5px;
+    z-index: 1;
+    background: white;
+}
+
+@media (min-width: 768px)  {
+    .col-md-auto {
+        max-width: 20%;
+    }
+    .items {
+        max-height: 100vh;
+        min-height: 100px;
+    }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-8-2 10:40:1
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bck-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+@keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+
+.slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-view-title title="New Bill"></app-view-title><nb-card [nbSpinner]="loading" nbSpinnerStatus="info" class="shadow slide-in-bck-center">    <nb-card-body>        <div class="container">            <form  [formGroup]="billForm">                <div class="row">                    <div class="col-md-auto">                        <div class="form-group">                            <label for="customer">Customer:</label>                            <input type="text"                                    nbInput                                    class="form-control"                                    formControlName="customer"                                    placeholder="Enter customer"                                   maxlength="150"                                   [status]="submit && f.customer.invalid ? \'danger\' : \'\'">                            <ng-container *ngIf="submit && f.customer.invalid">                                <p class="caption status-danger" *ngIf="f.customer.errors?.required">                                    Customer is required!                                </p>                            </ng-container>                                                 </div>                    </div>                    <div class="col-md-auto">                        <div class="form-group">                            <label for="totalItems">Total items:</label>                            <input type="text"                                    nbInput                                    class="form-control"                                    placeholder="Total items"                                   #totalItems                                   disabled>                                               </div>                    </div>                    <div class="col-md-auto">                        <div class="form-group">                            <label for="subTotal">Sub total:</label>                            <input type="text"                                    nbInput                                    class="form-control"                                    placeholder="Sub total"                                   #subTotal                                   [textMask]="{mask: mask.currency, guide: false}"                                   disabled>                                               </div>                    </div>                    <div class="col-md-auto">                        <div class="form-group">                            <label for="totalTaxes">Total taxes:</label>                            <input type="text"                                    nbInput                                    class="form-control"                                    placeholder="Total taxes"                                   #totalTaxes                                   [textMask]="{mask: mask.currency, guide: false}"                                   disabled>                                               </div>                    </div>                    <div class="col-md-auto">                        <div class="form-group">                            <label for="total">Total bill:</label>                            <input type="text"                                    nbInput                                    class="form-control"                                    placeholder="Total"                                   #total                                   [textMask]="{mask: mask.currency, guide: false}"                                   disabled>                                               </div>                    </div>                </div>                <label for="items">Items:</label>                <div class="items">                    <div formArrayName="items"                          [class]="i === 0 ? \'first-row\' : \'\'"                          *ngFor="let item of formItems.controls; let i = index;">                        <div [formGroupName]="i" class="row form-group">                            <div class="row col-11">                                <div class="col-md-auto mw-20">                                    <input type="text"                                            nbInput                                            class="form-control"                                            formControlName="name"                                             [attr.disabled]="i > 0 ? \'\' : null"                                            maxlength="150"                                           placeholder="Item name"                                           [status]="addingItem && getItem(i, \'name\').invalid ? \'danger\' : \'\'">                                    <ng-container *ngIf="addingItem && getItem(i, \'name\').invalid">                                        <p class="caption status-danger" *ngIf="getItem(i, \'name\').errors?.required">                                            Item name is required!                                        </p>                                    </ng-container>                                               </div>                                <div class="col-md-auto mw-20">                                    <input type="text"                                            nbInput                                            class="form-control"                                            formControlName="price"                                            [attr.disabled]="i > 0 ? \'\' : null"                                            placeholder="Item price"                                           [status]="addingItem && getItem(i, \'price\').invalid ? \'danger\' : \'\'"                                           [textMask]="{mask: mask.currency, guide: false}">                                    <ng-container *ngIf="addingItem && getItem(i, \'price\').invalid">                                        <p class="caption status-danger" *ngIf="getItem(i, \'price\').errors?.required">                                            Item price is required!                                        </p>                                    </ng-container>                                </div>                                <div class="col-md-auto mw-20">                                    <input type="text"                                            nbInput                                            class="form-control"                                            formControlName="tax"                                            [attr.disabled]="i > 0 ? \'\' : null"                                            placeholder="Item tax"                                           [status]="addingItem && getItem(i, \'tax\').invalid ? \'danger\' : \'\'"                                           [textMask]="{mask: mask.percentage, guide: false}">                                    <ng-container *ngIf="addingItem && getItem(i, \'tax\').invalid">                                        <p class="caption status-danger" *ngIf="getItem(i, \'tax\').errors?.required">                                            Item tax is required!                                        </p>                                    </ng-container>                                </div>                                <div class="col-md-auto mw-20">                                    <input type="text"                                            nbInput                                            class="form-control"                                           formControlName="numberItems"                                            [attr.disabled]="i > 0 ? \'\' : null"                                            placeholder="Number of items"                                           [textMask]="{mask: mask.integer, guide: false}">                                        <ng-container *ngIf="addingItem && getItem(i, \'numberItems\').invalid">                                            <p class="caption status-danger" *ngIf="getItem(i, \'numberItems\').errors?.required">                                                Number of items is required!                                            </p>                                        </ng-container>                                </div>                                <div class="col-md-auto mw-20">                                    <input type="text"                                            nbInput                                            class="form-control"                                            placeholder="Total item"                                                                                   formControlName="totalItem"                                           [attr.disabled]="\'\'"                                           [textMask]="{mask: mask.currency, guide: false}">                                </div>                            </div>                            <div class="row col">                                <div class="col-md-auto">                                    <button nbButton                                             status="primary"                                             (click)="addItem()"                                             *ngIf="i === 0"                                            [disabled]="formItems.invalid">                                        <i class="fa fa-plus fa-lg"></i>                                    </button>                                    <button nbButton                                             status="danger"                                             (click)="removeItem(i)"                                             *ngIf="i > 0">                                        <i class="fa fa-minus fa-lg"></i>                                    </button>                                </div>                                                            </div>                        </div>                    </div>                </div>            </form>        </div>    </nb-card-body>    <nb-card-footer>        <button nbButton                 status="primary"                 (click)="billIt()"                  [disabled]="f.customer.invalid || formItems.controls.length === 1">            Bill It        </button>    </nb-card-footer></nb-card></div>'
+    var COMPONENTS = [{'name': 'ActionsCellComponent', 'selector': 'app-actions-cell'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BilledCellComponent', 'selector': 'app-billed-cell'},{'name': 'ConfirmDeleteComponent', 'selector': 'app-confirm-delete'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CookiePolicyComponent', 'selector': 'app-cookie-policy'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DisclaimerComponent', 'selector': 'app-disclaimer'},{'name': 'FeaturesComponent', 'selector': 'app-features'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NewbillComponent', 'selector': 'app-newbill'},{'name': 'PdfPreviewComponent', 'selector': 'app-pdf-preview'},{'name': 'PoliciesComponent', 'selector': 'app-policies'},{'name': 'PrivacyPolicyComponent', 'selector': 'app-privacy-policy'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'TermAndConditionsComponent', 'selector': 'app-term-and-conditions'},{'name': 'UserPopoverComponent', 'selector': 'ngx-user-popover'},{'name': 'ViewTitleComponent', 'selector': 'app-view-title'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'NewbillComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NewbillComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

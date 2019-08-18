@@ -1,5 +1,5 @@
 # Billit client
-Fronent of billit application
+Frontend of billit application
 
 ## Test
 For test run following command:

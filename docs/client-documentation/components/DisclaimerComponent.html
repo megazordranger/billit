@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>billit documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">billit documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DisclaimerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/auth/policies/policies.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Container for disclaimer</p>
+
+    </p>
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-disclaimer</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./disclaimer.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+/**
+ * Container for term and condition of use
+ */
+@Component({
+  selector: &#x27;app-term-and-conditions&#x27;,
+  templateUrl: &#x27;./term-and-conditions.component.html&#x27;,
+})
+export class TermAndConditionsComponent { }
+
+/**
+ * Container for privacy police
+ */
+@Component({
+  selector: &#x27;app-privacy-policy&#x27;,
+  templateUrl: &#x27;./privacy-policy.component.html&#x27;,
+})
+export class PrivacyPolicyComponent { }
+
+/**
+ * Container for disclaimer
+ */
+@Component({
+  selector: &#x27;app-disclaimer&#x27;,
+  templateUrl: &#x27;./disclaimer.component.html&#x27;,
+})
+export class DisclaimerComponent { }
+
+/**
+ * Container for cookie policy
+ */
+@Component({
+  selector: &#x27;app-cookie-policy&#x27;,
+  templateUrl: &#x27;./cokie-policy.component.html&#x27;,
+})
+export class CookiePolicyComponent { }
+
+/**
+ * Container for all policies components 
+ */
+@Component({
+  selector: &#x27;app-policies&#x27;,
+  templateUrl: &#x27;./policies.component.html&#x27;,
+  styleUrls: [&#x27;./policies.component.scss&#x27;]
+})
+export class PoliciesComponent implements OnInit {
+
+  /**
+   * Route tabset configuration
+   * 
+   * @see [NbRouteTabsetComponent]{@link https://akveo.github.io/nebular/docs/components/tabs/overview#nbroutetabsetcomponent}
+   */
+  tabs: any[] &#x3D; [
+    {
+      title: &#x27;Terms &amp; Conditions&#x27;,
+      route: &#x27;./term-and-conditions&#x27;,
+      responsive: true,
+    },
+    {
+      title: &#x27;Privacy Policy&#x27;,
+      route: &#x27;./privacy-policy&#x27;,
+      responsive: true,
+    },
+    {
+      title: &#x27;Disclaimer&#x27;,
+      route: &#x27;./disclaimer&#x27;,
+      responsive: true,
+    },
+    {
+      title: &#x27;Cookie Policy&#x27;,
+      route: &#x27;./cookie-policy&#x27;,
+      responsive: true,
+    }
+  ];
+
+  /**
+   * @ignore
+   */
+  constructor() { }
+
+   /**
+   * @ignore
+   */
+  ngOnInit() {
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;Disclaimer&lt;/h1&gt;
+
+&lt;p&gt;This disclaimer (&amp;quot;Disclaimer&amp;quot;, &amp;quot;Agreement&amp;quot;) is an agreement between Website Operator (&amp;quot;Website Operator&amp;quot;, &amp;quot;us&amp;quot;, &amp;quot;we&amp;quot; or &amp;quot;our&amp;quot;) and you (&amp;quot;User&amp;quot;, &amp;quot;you&amp;quot; or &amp;quot;your&amp;quot;). This Disclaimer sets forth the general guidelines, terms and conditions of your use of the &lt;a target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;nofollow&quot; href&#x3D;&quot;https://billit.tk&quot;&gt;billit.tk&lt;/a&gt; website and any of its products or services (collectively, &amp;quot;Website&amp;quot; or &amp;quot;Services&amp;quot;).&lt;/p&gt;
+
+&lt;h2&gt;Representation&lt;/h2&gt;
+
+&lt;p&gt;Any views or opinions represented in this Website are personal and belong solely to Website Operator and do not represent those of people, institutions or organizations that the owner may or may not be associated with in professional or personal capacity unless explicitly stated. Any views or opinions are not intended to malign any religion, ethnic group, club, organization, company, or individual.&lt;/p&gt;
+
+&lt;h2&gt;Content and postings&lt;/h2&gt;
+
+&lt;p&gt;You may print a copy of any part of this Website for your personal or non-commercial use.&lt;h2&gt;Indemnification and warranties&lt;/h2&gt;
+
+&lt;p&gt;While we have made every attempt to ensure that the information contained on the Website is correct, Website Operator is not responsible for any errors or omissions, or for the results obtained from the use of this information. All information on the Website is provided &amp;quot;as is&amp;quot;, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied. In no event will Website Operator be liable to you or anyone else for any decision made or action taken in reliance on the information on the Website or for any consequential, special or similar damages, even if advised of the possibility of such damages. Furthermore, information contained on the Website and any pages linked to and from it are subject to change at any time and without warning.&lt;/p&gt;
+
+&lt;p&gt;We reserve the right to modify this Disclaimer relating to the Website or Services at any time, effective upon posting of an updated version of this Disclaimer on the Website. When we do we will revise the updated date at the bottom of this page. Continued use of the Website after any such changes shall constitute your consent to such changes. Policy was created with &lt;a style&#x3D;&quot;color:inherit&quot; target&#x3D;&quot;_blank&quot; title&#x3D;&quot;Disclaimer generator&quot; href&#x3D;&quot;https://www.websitepolicies.com/blog/sample-disclaimer-template&quot;&gt;WebsitePolicies&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Acceptance of this disclaimer&lt;/h2&gt;
+
+&lt;p&gt;You acknowledge that you have read this Disclaimer and agree to all its terms and conditions. By accessing the Website you agree to be bound by this Disclaimer. If you do not agree to abide by the terms of this Disclaimer, you are not authorized to use or access the Website.&lt;/p&gt;
+
+&lt;h2&gt;Contacting us&lt;/h2&gt;
+
+&lt;p&gt;If you have any questions about this Disclaimer, please contact us.&lt;/p&gt;
+
+&lt;p&gt;This document was last updated on August 5, 2019&lt;/p&gt;</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h1>Disclaimer</h1><p>This disclaimer (&quot;Disclaimer&quot;, &quot;Agreement&quot;) is an agreement between Website Operator (&quot;Website Operator&quot;, &quot;us&quot;, &quot;we&quot; or &quot;our&quot;) and you (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;). This Disclaimer sets forth the general guidelines, terms and conditions of your use of the <a target="_blank" rel="nofollow" href="https://billit.tk">billit.tk</a> website and any of its products or services (collectively, &quot;Website&quot; or &quot;Services&quot;).</p><h2>Representation</h2><p>Any views or opinions represented in this Website are personal and belong solely to Website Operator and do not represent those of people, institutions or organizations that the owner may or may not be associated with in professional or personal capacity unless explicitly stated. Any views or opinions are not intended to malign any religion, ethnic group, club, organization, company, or individual.</p><h2>Content and postings</h2><p>You may print a copy of any part of this Website for your personal or non-commercial use.<h2>Indemnification and warranties</h2><p>While we have made every attempt to ensure that the information contained on the Website is correct, Website Operator is not responsible for any errors or omissions, or for the results obtained from the use of this information. All information on the Website is provided &quot;as is&quot;, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied. In no event will Website Operator be liable to you or anyone else for any decision made or action taken in reliance on the information on the Website or for any consequential, special or similar damages, even if advised of the possibility of such damages. Furthermore, information contained on the Website and any pages linked to and from it are subject to change at any time and without warning.</p><p>We reserve the right to modify this Disclaimer relating to the Website or Services at any time, effective upon posting of an updated version of this Disclaimer on the Website. When we do we will revise the updated date at the bottom of this page. Continued use of the Website after any such changes shall constitute your consent to such changes. Policy was created with <a style="color:inherit" target="_blank" title="Disclaimer generator" href="https://www.websitepolicies.com/blog/sample-disclaimer-template">WebsitePolicies</a>.</p><h2>Acceptance of this disclaimer</h2><p>You acknowledge that you have read this Disclaimer and agree to all its terms and conditions. By accessing the Website you agree to be bound by this Disclaimer. If you do not agree to abide by the terms of this Disclaimer, you are not authorized to use or access the Website.</p><h2>Contacting us</h2><p>If you have any questions about this Disclaimer, please contact us.</p><p>This document was last updated on August 5, 2019</p></div>'
+    var COMPONENTS = [{'name': 'ActionsCellComponent', 'selector': 'app-actions-cell'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BilledCellComponent', 'selector': 'app-billed-cell'},{'name': 'ConfirmDeleteComponent', 'selector': 'app-confirm-delete'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CookiePolicyComponent', 'selector': 'app-cookie-policy'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DisclaimerComponent', 'selector': 'app-disclaimer'},{'name': 'FeaturesComponent', 'selector': 'app-features'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NewbillComponent', 'selector': 'app-newbill'},{'name': 'PdfPreviewComponent', 'selector': 'app-pdf-preview'},{'name': 'PoliciesComponent', 'selector': 'app-policies'},{'name': 'PrivacyPolicyComponent', 'selector': 'app-privacy-policy'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'TermAndConditionsComponent', 'selector': 'app-term-and-conditions'},{'name': 'UserPopoverComponent', 'selector': 'ngx-user-popover'},{'name': 'ViewTitleComponent', 'selector': 'app-view-title'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DisclaimerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DisclaimerComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

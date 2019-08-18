@@ -1,0 +1,330 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>billit documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">billit documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>BillPdfService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/services/bill-pdf.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Print bill pdf service</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#print">print</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="print"></a>
+                    <span class="name">
+                        <b>
+                            print
+                        </b>
+                        <a href="#print"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>print(undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/shared/services/bill-pdf.service.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Print bill pdf</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { formatNumber } from &#x27;@angular/common&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import * as jsPDF from &#x27;jspdf&#x27;;
+
+/**
+ * Print bill pdf service
+ */
+@Injectable()
+export class BillPdfService {
+
+  /**
+   * @ignore
+   */
+  constructor() { }
+
+  /**
+   * Print bill pdf
+   */
+  print({ id, customer, created_at, items }) {
+
+    const date &#x3D; moment(new Date(created_at)).format(&quot;DD/MM/YYYY&quot;);
+    const logo &#x3D; &#x27;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&#x27;;
+
+    let total: any &#x3D; 0;
+    let subTotal: any &#x3D; 0;
+    let totalTaxes: any &#x3D; 0;
+    let totalItems: any &#x3D; 0;
+
+    items.forEach(({ name, price, tax, numberItems, totalItem }, i) &#x3D;&gt; {
+      total &#x3D; +(total + price * (tax/100 + 1) * numberItems).toFixed(2);
+      subTotal &#x3D; +(subTotal + price * numberItems).toFixed(2);
+      totalTaxes &#x3D; +(totalTaxes + price * (tax/100) * numberItems).toFixed(2);
+      totalItems +&#x3D; numberItems;
+
+      items[i] &#x3D; {
+        id: i+1,
+        name,
+        price: &#x60;$ ${formatNumber(price, &#x27;es&#x27;)}&#x60;,
+        tax: &#x60;% ${formatNumber(tax, &#x27;es&#x27;)}&#x60;,
+        numberItems,
+        total: &#x60;$ ${formatNumber(totalItem, &#x27;es&#x27;)}&#x60;,
+      }
+    });
+
+    total &#x3D; &#x27;$ &#x27; + formatNumber(total, &#x27;es&#x27;);
+    subTotal &#x3D; &#x27;$ &#x27; +  formatNumber(subTotal, &#x27;es&#x27;);
+    totalTaxes &#x3D; &#x27;$ &#x27; +  formatNumber(totalTaxes, &#x27;es&#x27;);
+
+    const doc &#x3D; new jsPDF();
+
+    doc.deletePage(1);
+    doc.addPage(&#x27;A5&#x27;, &#x27;l&#x27;);
+    doc.addImage(logo, &#x27;png&#x27;, 15, 0);
+
+    doc.text(&#x27;Invoice #:&#x27;, 15, 50);
+    doc.text(id, 50, 50);
+    doc.text(&#x27;Created:&#x27;, 15, 60);
+    doc.text(date, 50, 60);
+    doc.text(&#x27;Customer:&#x27;, 15, 70);
+    doc.text(customer, 50, 70);
+
+    doc.text(&#x27;Total items:&#x27;, 15, 100);
+    doc.text(totalItems.toString(), 50, 100);
+    doc.text(&#x27;Sub Total:&#x27;, 15, 110);
+    doc.text(subTotal, 50, 110);
+    doc.text(&#x27;Total Taxes:&#x27;, 15, 120);
+    doc.text(totalTaxes, 50, 120);
+    doc.text(&#x27;Total:&#x27;, 15, 130);
+    doc.text(total, 50, 130);
+
+    doc.addPage(&#x27;A4&#x27;);
+
+    doc.autoTable({ 
+      columns: [
+        { header: &#x27;#&#x27;, dataKey: &#x27;id&#x27; },
+        { header: &#x27;Name&#x27;, dataKey: &#x27;name&#x27; },
+        { header: &#x27;Price&#x27;, dataKey: &#x27;price&#x27; },
+        { header: &#x27;Tax&#x27;, dataKey: &#x27;tax&#x27; },
+        { header: &#x27;Number of items&#x27;, dataKey: &#x27;numberItems&#x27; },
+        { header: &#x27;Total item&#x27;, dataKey: &#x27;total&#x27; },
+      ],
+      body: items
+    });
+
+    doc.save(&#x60;Invoice_${id}.pdf&#x60;);
+  }
+}</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'BillPdfService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

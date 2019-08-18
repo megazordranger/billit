@@ -1,0 +1,1201 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>billit documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">billit documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DashboardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/dashboard/dashboard.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Main view component,
+show all user bills and allow diferent actions: </p>
+<ul>
+<li>Delete</li>
+<li>Preview</li>
+<li>Print </li>
+</ul>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dashboard</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./dashboard.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dashboard.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#actionHandler">actionHandler</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#settings">settings</a>
+                            </li>
+                            <li>
+                                <a href="#source">source</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deleteRecord">deleteRecord</a>
+                            </li>
+                            <li>
+                                <a href="#hideLoader">hideLoader</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#pdfPreview">pdfPreview</a>
+                            </li>
+                            <li>
+                                <a href="#pdfPrint">pdfPrint</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader">showLoader</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(billService: <a href="../injectables/BillService.html">BillService</a>, billPdfService: <a href="../injectables/BillPdfService.html">BillPdfService</a>, dialogService: NbDialogService, errorService: <a href="../injectables/ShowErrorService.html">ShowErrorService</a>, miscFuncService: <a href="../injectables/MiscFunctionsService.html">MiscFunctionsService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:103</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Injecting dependencies and initializing store variable for smart table data</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>billService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BillService.html" target="_self" >BillService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>billPdfService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BillPdfService.html" target="_self" >BillPdfService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>NbDialogService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>errorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ShowErrorService.html" target="_self" >ShowErrorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>miscFuncService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MiscFunctionsService.html" target="_self" >MiscFunctionsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteRecord"></a>
+                    <span class="name">
+                        <b>
+                            deleteRecord
+                        </b>
+                        <a href="#deleteRecord"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteRecord(row)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete selected bill</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideLoader"></a>
+                    <span class="name">
+                        <b>
+                            hideLoader
+                        </b>
+                        <a href="#hideLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideLoader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Hide load spinner</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get user bills data and passing it to smart table</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pdfPreview"></a>
+                    <span class="name">
+                        <b>
+                            pdfPreview
+                        </b>
+                        <a href="#pdfPreview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pdfPreview(row)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Selected bill preview</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pdfPrint"></a>
+                    <span class="name">
+                        <b>
+                            pdfPrint
+                        </b>
+                        <a href="#pdfPrint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pdfPrint(row)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Print selected bill</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <b>
+                            showLoader
+                        </b>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showLoader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show load spinner</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="actionHandler"></a>
+                        <span class="name">
+                            <b>
+                            actionHandler</b>
+                            <a href="#actionHandler"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Handler for action event emitter from ActionsCellComponent in the smart table</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Variable for hide/show loading in submit button form,
+deafult value us false (loading hide)</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="settings"></a>
+                        <span class="name">
+                            <b>
+                            settings</b>
+                            <a href="#settings"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    actions: {
+      add: false,
+      edit: false,
+      delete: false,
+    },
+    columns: {
+      id: {
+        title: &#x27;Bill #&#x27;,
+        type:&#x27;html&#x27;,
+        valuePrepareFunction:(cell, row)&#x3D;&gt;{
+          if(row.id.length &lt;&#x3D; 4) {
+            row.id &#x3D; Array(4 - row.id.length).fill(0).join(&#x27;&#x27;) + row.id;
+          }
+          return row.id;
+        },
+        filter: false
+      },
+      customer: {
+        title: &#x27;Customer&#x27;,
+        filter: false
+      },
+      created_at: {
+        title: &#x27;Created&#x27;,
+        type:&#x27;html&#x27;,
+        valuePrepareFunction:(cell, row)&#x3D;&gt;{
+          return moment(row.created_at).format(&quot;DD/MM/YYYY&quot;); 
+        },
+        filter: false
+      },
+      items: {
+        title: &#x27;Total billed&#x27;,
+        filter: false,
+        type: &#x27;custom&#x27;,
+        renderComponent: BilledCellComponent
+      },
+      actions: 
+      {
+        title:&#x27;Actions&#x27;,
+        type:&#x27;custom&#x27;,
+        renderComponent: ActionsCellComponent,
+        onComponentInitFunction: this.actionHandler,
+        filter:false       
+      },
+    }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Configuration for smart table</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="source"></a>
+                        <span class="name">
+                            <b>
+                            source</b>
+                            <a href="#source"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>LocalDataSource</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/features/dashboard/dashboard.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Declaring store variable for smart table data</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { LocalDataSource } from &#x27;ng2-smart-table&#x27;;
+import { NbDialogService } from &#x27;@nebular/theme&#x27;;
+import { BillService, BillPdfService, ShowErrorService, MiscFunctionsService } from &#x27;app/shared/services&#x27;;
+import { BilledCellComponent } from &#x27;./billed-cell/billed-cell.component&#x27;;
+import { ActionsCellComponent } from &#x27;./actions-cell/actions-cell.component&#x27;;
+import { PdfPreviewComponent } from &#x27;./pdf-preview/pdf-preview.component&#x27;;
+import { ConfirmDeleteComponent } from &#x27;./confirm-delete/confirm-delete.component&#x27;;
+import * as moment from &#x27;moment&#x27;;
+
+/**
+ * Main view component,
+ * show all user bills and allow diferent actions: 
+ * 
+ * * Delete
+ * * Preview
+ * * Print 
+ */
+@Component({
+  selector: &#x27;app-dashboard&#x27;,
+  templateUrl: &#x27;./dashboard.component.html&#x27;,
+  styleUrls: [&#x27;./dashboard.component.scss&#x27;]
+})
+export class DashboardComponent implements OnInit {
+
+  /**
+   * Variable for hide/show loading in submit button form,
+   * deafult value us false (loading hide)
+   */
+  public loading: boolean &#x3D; false;
+  /**
+   * Declaring store variable for smart table data
+   */
+  source: LocalDataSource;
+
+  /**
+   * Handler for action event emitter from ActionsCellComponent in the smart table
+   */
+  actionHandler &#x3D; instance &#x3D;&gt; {
+    instance.action.subscribe(({ action, row }) &#x3D;&gt; {
+      switch(action){
+        case &#x27;delete&#x27;:
+          this.deleteRecord(row);
+          break;
+        case &#x27;preview&#x27;:
+          this.pdfPreview(row);
+          break;
+        case &#x27;print&#x27;:
+          this.pdfPrint(row);
+          break;
+      }
+    });
+  }
+
+  /**
+   * Configuration for smart table
+   */
+  settings &#x3D; {
+    actions: {
+      add: false,
+      edit: false,
+      delete: false,
+    },
+    columns: {
+      id: {
+        title: &#x27;Bill #&#x27;,
+        type:&#x27;html&#x27;,
+        valuePrepareFunction:(cell, row)&#x3D;&gt;{
+          if(row.id.length &lt;&#x3D; 4) {
+            row.id &#x3D; Array(4 - row.id.length).fill(0).join(&#x27;&#x27;) + row.id;
+          }
+          return row.id;
+        },
+        filter: false
+      },
+      customer: {
+        title: &#x27;Customer&#x27;,
+        filter: false
+      },
+      created_at: {
+        title: &#x27;Created&#x27;,
+        type:&#x27;html&#x27;,
+        valuePrepareFunction:(cell, row)&#x3D;&gt;{
+          return moment(row.created_at).format(&quot;DD/MM/YYYY&quot;); 
+        },
+        filter: false
+      },
+      items: {
+        title: &#x27;Total billed&#x27;,
+        filter: false,
+        type: &#x27;custom&#x27;,
+        renderComponent: BilledCellComponent
+      },
+      actions: 
+      {
+        title:&#x27;Actions&#x27;,
+        type:&#x27;custom&#x27;,
+        renderComponent: ActionsCellComponent,
+        onComponentInitFunction: this.actionHandler,
+        filter:false       
+      },
+    }
+  };
+  
+  /**
+   * Injecting dependencies and initializing store variable for smart table data
+   */
+  constructor(
+    private billService: BillService,
+    private billPdfService: BillPdfService,
+    private dialogService: NbDialogService,
+    private errorService: ShowErrorService,
+    private miscFuncService:  MiscFunctionsService
+  ) {
+    this.source &#x3D; new LocalDataSource();
+  }
+
+  /**
+   * Get user bills data and passing it to smart table
+   */
+  ngOnInit() {
+
+    this.showLoader();
+    this.billService.getBills()
+      .subscribe(({ data, errors }) &#x3D;&gt; {
+        
+        this.hideLoader();
+        if(errors) {
+          console.log(errors);
+          this.errorService.show(errors);
+        }
+          
+        if(data) {
+          const { bills } &#x3D; data as any;
+          this.source.empty().then(() &#x3D;&gt; {
+            this.source.load(bills);
+          }); 
+        }
+        
+      }, error &#x3D;&gt; {
+        this.hideLoader();
+        this.errorService.showDefault();
+        console.log(error)
+      });
+  }
+
+  /**
+   * Show load spinner
+   */
+  showLoader() {
+    this.loading &#x3D; true;
+  }
+
+  /**
+   * Hide load spinner
+   */
+  hideLoader() {
+    this.loading &#x3D; false;
+  }
+
+  /**
+   * Delete selected bill
+   */
+  deleteRecord(row) {
+    this.dialogService.open(ConfirmDeleteComponent, { context: { id: row.id } })
+      .onClose.subscribe(del &#x3D;&gt; {
+        if(!del) return;
+        
+        this.showLoader();
+        this.billService.deleteBill(row.id)
+          .subscribe(({ data, errors }) &#x3D;&gt; {
+
+            this.hideLoader();
+            if(errors) {
+              console.log(errors);
+              this.errorService.show(errors);
+            }
+
+            const { billDelete } &#x3D; data;
+            if(billDelete) {
+              this.source.remove(row);
+            } 
+
+          }, error &#x3D;&gt; { 
+            this.hideLoader();
+            this.errorService.showDefault();
+            console.log(error)
+          });
+      });
+  }
+
+  /**
+   * Selected bill preview
+   */
+  pdfPreview(row) {
+    this.dialogService.open(PdfPreviewComponent, { context: { row } });
+  }
+
+  /**
+   * Print selected bill
+   */
+  pdfPrint(row) {
+    const newRow: any &#x3D; this.miscFuncService.copyObj(row);
+    this.billPdfService.print(newRow);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-view-title title&#x3D;&quot;Dashboard&quot;&gt;&lt;/app-view-title&gt;
+&lt;nb-card class&#x3D;&quot;shadow&quot; [nbSpinner]&#x3D;&quot;loading&quot; nbSpinnerStatus&#x3D;&quot;info&quot; class&#x3D;&quot;slide-in-elliptic-top-fwd&quot;&gt;
+    &lt;nb-card-body&gt;
+        &lt;ng2-smart-table [settings]&#x3D;&quot;settings&quot; [source]&#x3D;&quot;source&quot;&gt;&lt;/ng2-smart-table&gt;
+    &lt;/nb-card-body&gt;
+&lt;/nb-card&gt;
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./dashboard.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/* ----------------------------------------------
+ * Generated by Animista on 2019-8-2 10:37:7
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+}
+@keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+}
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-view-title title="Dashboard"></app-view-title><nb-card class="shadow" [nbSpinner]="loading" nbSpinnerStatus="info" class="slide-in-elliptic-top-fwd">    <nb-card-body>        <ng2-smart-table [settings]="settings" [source]="source"></ng2-smart-table>    </nb-card-body></nb-card>  </div>'
+    var COMPONENTS = [{'name': 'ActionsCellComponent', 'selector': 'app-actions-cell'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BilledCellComponent', 'selector': 'app-billed-cell'},{'name': 'ConfirmDeleteComponent', 'selector': 'app-confirm-delete'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CookiePolicyComponent', 'selector': 'app-cookie-policy'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DisclaimerComponent', 'selector': 'app-disclaimer'},{'name': 'FeaturesComponent', 'selector': 'app-features'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NewbillComponent', 'selector': 'app-newbill'},{'name': 'PdfPreviewComponent', 'selector': 'app-pdf-preview'},{'name': 'PoliciesComponent', 'selector': 'app-policies'},{'name': 'PrivacyPolicyComponent', 'selector': 'app-privacy-policy'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'TermAndConditionsComponent', 'selector': 'app-term-and-conditions'},{'name': 'UserPopoverComponent', 'selector': 'ngx-user-popover'},{'name': 'ViewTitleComponent', 'selector': 'app-view-title'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DashboardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DashboardComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
