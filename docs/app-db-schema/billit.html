@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang='en-us' xmlns='http://www.w3.org/1999/xhtml' >
 <head>
-<title>billit</title>
+<title>PostgreSQL</title>
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link rel="shortcut icon" href="https://www.dbschema.com/images/favicon.ico">
@@ -24,8 +24,8 @@
 
 
 
-<a name='layout1'/><h4>Billit DB Schema</h4>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'   width='480' height='558' viewBox='0 0 480 558' >
+<a name='layout1'/><h4>Default Layout</h4>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'   width='370' height='494' viewBox='0 0 370 494' >
   <script type='text/ecmascript'>
   <![CDATA[
   function hghl(el) { for ( var i in el ){ var elem = document.getElementById(el[i]); if ( elem != null ) elem.setAttribute('class','highlight');  }  }
@@ -219,95 +219,90 @@
 </defs>
 
 <!-- == Desktop == -->
-<rect x='1' y='1' width='478' height='556' rx='8' ry='8' style='fill:url(#layoutBgB); stroke:#777777; stroke-width:0.5;' />
+<rect x='1' y='1' width='368' height='492' rx='8' ry='8' style='fill:url(#layoutBgB); stroke:#777777; stroke-width:0.5;' />
 
 <!-- == Legend == -->
 <g transform='translate(10,10)'>
   <rect x='10' y='10' width='330' height='56' rx='6' ry='6' style='fill:url(#legendGradient);filter:url(#shadow);'/> 
-  <text x='20' y='25'>billit</text> 
+  <text x='20' y='25'>PostgreSQL</text> 
   <text x='20' y='39' style='fill:#aaaaaa; font-size:11px;'><tspan>Move the mouse over tables &amp; columns to read the comments.</tspan></text> 
   <a xlink:href='https://www.dbschema.com'><text x='20' y='53' style='fill:#486dc1; font-size:12px;'><tspan>Generated using DbSchema © Wise Coders</tspan></text></a> 
 </g>
 
 <g transform='translate(0,110)'>
-<!-- == Group 'bills' == -->
-<rect class='grp' style='fill:#ECF0F7;stroke:#CED4E0' x='32' y='45' width='416' height='338' />
-<text x='44' y='61'>bills</text>
-<rect style='fill:url(#groupUnderTitleLine); stroke-width:2;' x='44' y='65' width='392' height='2' />
-
 <!-- == Fk 'bill_items_bill_items_bill_id_foreign' == -->
-<path id='bill_items_bill_items_bill_id_foreign'  onmouseover="hghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id','public.bills.id'])" onmouseout="uhghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id','public.bills.id'])" transform='translate(8,0)' class='scene' d='M 256,96L 208,96' >
+<path id='bill_items_bill_items_bill_id_foreign'  onmouseover="hghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id','public.bills.id'])" onmouseout="uhghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id','public.bills.id'])" transform='translate(8,0)' class='scene' d='M 192,64L 144,64' >
 	<title>Fk bill_items_bill_id_foreign
 bill_items ref bills ( bill_id -&gt; id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 256,96L 208,96' ><title>Fk bill_items_bill_id_foreign
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 192,64L 144,64' ><title>Fk bill_items_bill_id_foreign
 bill_items ref bills ( bill_id -&gt; id )</title></path>
-<text x='233' y='91' transform='rotate(0 233,91)' class='relName' style='fill:#748EA7'>bill_id</text>
+<text x='169' y='59' transform='rotate(0 169,59)' class='relName' style='fill:#748EA7'>bill_id</text>
 <!-- == Fk 'bills_bills_user_id_foreign' == -->
-<path id='bills_bills_user_id_foreign'  onmouseover="hghl(['bills_bills_user_id_foreign','public.bills.user_id','public.users.id'])" onmouseout="uhghl(['bills_bills_user_id_foreign','public.bills.user_id','public.users.id'])" transform='translate(8,0)' class='scene' d='M 64,192L 64,240' >
+<path id='bills_bills_user_id_foreign'  onmouseover="hghl(['bills_bills_user_id_foreign','public.bills.user_id','public.users.id'])" onmouseout="uhghl(['bills_bills_user_id_foreign','public.bills.user_id','public.users.id'])" transform='translate(8,0)' class='scene' d='M 64,160L 64,208' >
 	<title>Fk bills_user_id_foreign
 bills ref users ( user_id -&gt; id )</title>
 </path>
-<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 64,192L 64,240' ><title>Fk bills_user_id_foreign
+<path transform='translate(8,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 64,160L 64,208' ><title>Fk bills_user_id_foreign
 bills ref users ( user_id -&gt; id )</title></path>
-<text x='79' y='193' transform='rotate(90 79,193)' class='relName' style='fill:#748EA7'>user_id</text>
+<text x='79' y='161' transform='rotate(90 79,161)' class='relName' style='fill:#748EA7'>user_id</text>
 <!-- == Table 'bill_items' == -->
-<rect class='entity' style='stroke:#1E498F' x='272' y='72' width='160' height='160' rx='8' ry='8' />
-<path d='M 272 100 L 272 80 Q 272 72 280 72 L 424 72 Q 432 72 432 80 L 432 100 L272 100 ' style='fill:url(#tbg_BED3F4);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='272' y='72' width='160' height='160' rx='8' ry='8' style='fill:none;stroke:#DADCE1'/>
-<a xlink:href='#public.bill_items'><text x='322' y='92' >bill_items</text><title>Table public.bill_items</title></a>
-  <use id='nn' x='274' y='109' xlink:href='#nn'/><use id='pk' x='274' y='108' xlink:href='#pk'><title>Pk bill_items_pkey ( id ) </title></use><a xlink:href='#public.bill_items_id'><text id='public.bill_items.id' x='291' y='119'>id</text><title>id
+<rect class='entity' style='stroke:#1E498F' x='208' y='40' width='112' height='160' rx='8' ry='8' />
+<path d='M 208 68 L 208 48 Q 208 40 216 40 L 312 40 Q 320 40 320 48 L 320 68 L208 68 ' style='fill:url(#tbg_BED3F4);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='208' y='40' width='112' height='160' rx='8' ry='8' style='fill:none;stroke:#DADCE1'/>
+<a xlink:href='#public.bill_items'><text x='234' y='60' >bill_items</text><title>Table public.bill_items</title></a>
+  <use id='nn' x='210' y='77' xlink:href='#nn'/><use id='pk' x='210' y='76' xlink:href='#pk'><title>Pk bill_items_pkey ( id ) </title></use><a xlink:href='#public.bill_items_id'><text id='public.bill_items.id' x='227' y='87'>id</text><title>id
 * serial</title></a>
-<text x='416' y='120' text-anchor='end' class='colType'>serial</text>  <use id='nn' x='274' y='125' xlink:href='#nn'/><a xlink:href='#public.bill_items_bill_id'><text id='public.bill_items.bill_id' x='291' y='135' onmouseover="hghl(['bill_items_bill_items_bill_id_foreign','public.bills.id'])" onmouseout="uhghl(['bill_items_bill_items_bill_id_foreign','public.bills.id'])">bill_id</text><title>bill_id
+<text x='317' y='84' text-anchor='end' class='colType'>#</text>  <use id='nn' x='210' y='93' xlink:href='#nn'/><a xlink:href='#public.bill_items_bill_id'><text id='public.bill_items.bill_id' x='227' y='103' onmouseover="hghl(['bill_items_bill_items_bill_id_foreign','public.bills.id'])" onmouseout="uhghl(['bill_items_bill_items_bill_id_foreign','public.bills.id'])">bill_id</text><title>bill_id
 * integer</title></a>
-<text x='416' y='136' text-anchor='end' class='colType'>integer</text><a xlink:href='#public.bill_items.bill_id'><use id='fk' x='420' y='124' xlink:href='#fk'/><title>References bills ( bill_id -&gt; id ) </title></a>
-  <use id='nn' x='274' y='141' xlink:href='#nn'/><a xlink:href='#public.bill_items_name'><text id='public.bill_items.name' x='291' y='151'>name</text><title>name
+<a xlink:href='#public.bill_items.bill_id'><use id='fk' x='308' y='92' xlink:href='#fk'/><title>References bills ( bill_id -&gt; id ) </title></a>
+  <use id='nn' x='210' y='109' xlink:href='#nn'/><a xlink:href='#public.bill_items_name'><text id='public.bill_items.name' x='227' y='119'>name</text><title>name
 * varchar(150)</title></a>
-<text x='416' y='152' text-anchor='end' class='colType'>varchar(150)</text>  <use id='nn' x='274' y='157' xlink:href='#nn'/><a xlink:href='#public.bill_items_price'><text id='public.bill_items.price' x='291' y='167'>price</text><title>price
+<text x='317' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='210' y='125' xlink:href='#nn'/><a xlink:href='#public.bill_items_price'><text id='public.bill_items.price' x='227' y='135'>price</text><title>price
 * real</title></a>
-<text x='416' y='168' text-anchor='end' class='colType'>real</text>  <use id='nn' x='274' y='173' xlink:href='#nn'/><a xlink:href='#public.bill_items_tax'><text id='public.bill_items.tax' x='291' y='183'>tax</text><title>tax
+<text x='317' y='132' text-anchor='end' class='colType'>#</text>  <use id='nn' x='210' y='141' xlink:href='#nn'/><a xlink:href='#public.bill_items_tax'><text id='public.bill_items.tax' x='227' y='151'>tax</text><title>tax
 * real</title></a>
-<text x='416' y='184' text-anchor='end' class='colType'>real</text>  <use id='nn' x='274' y='189' xlink:href='#nn'/><a xlink:href='#public.bill_items_numberItems'><text id='public.bill_items.numberItems' x='291' y='199'>numberItems</text><title>numberItems
+<text x='317' y='148' text-anchor='end' class='colType'>#</text>  <use id='nn' x='210' y='157' xlink:href='#nn'/><a xlink:href='#public.bill_items_numberItems'><text id='public.bill_items.numberItems' x='227' y='167'>numberItems</text><title>numberItems
 * integer</title></a>
-<text x='416' y='200' text-anchor='end' class='colType'>integer</text>  <use id='nn' x='274' y='205' xlink:href='#nn'/><a xlink:href='#public.bill_items_totalItem'><text id='public.bill_items.totalItem' x='291' y='215'>totalItem</text><title>totalItem
+<text x='317' y='164' text-anchor='end' class='colType'>#</text>  <use id='nn' x='210' y='173' xlink:href='#nn'/><a xlink:href='#public.bill_items_totalItem'><text id='public.bill_items.totalItem' x='227' y='183'>totalItem</text><title>totalItem
 * real</title></a>
-<text x='416' y='216' text-anchor='end' class='colType'>real</text>
+<text x='317' y='180' text-anchor='end' class='colType'>#</text>
 <!-- == Table 'bills' == -->
-<rect class='entity' style='stroke:#1E498F' x='48' y='72' width='160' height='112' rx='8' ry='8' />
-<path d='M 48 100 L 48 80 Q 48 72 56 72 L 200 72 Q 208 72 208 80 L 208 100 L48 100 ' style='fill:url(#tbg_BED3F4);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='48' y='72' width='160' height='112' rx='8' ry='8' style='fill:none;stroke:#DADCE1'/>
-<a xlink:href='#public.bills'><text x='113' y='92' >bills</text><title>Table public.bills</title></a>
-  <use id='nn' x='50' y='109' xlink:href='#nn'/><use id='pk' x='50' y='108' xlink:href='#pk'><title>Pk bills_pkey ( id ) </title></use><a xlink:href='#public.bills_id'><text id='public.bills.id' x='67' y='119' onmouseover="hghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id'])" onmouseout="uhghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id'])">id</text><title>id
+<rect class='entity' style='stroke:#1E498F' x='48' y='40' width='96' height='112' rx='8' ry='8' />
+<path d='M 48 68 L 48 48 Q 48 40 56 40 L 136 40 Q 144 40 144 48 L 144 68 L48 68 ' style='fill:url(#tbg_BED3F4);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='48' y='40' width='96' height='112' rx='8' ry='8' style='fill:none;stroke:#DADCE1'/>
+<a xlink:href='#public.bills'><text x='81' y='60' >bills</text><title>Table public.bills</title></a>
+  <use id='nn' x='50' y='77' xlink:href='#nn'/><use id='pk' x='50' y='76' xlink:href='#pk'><title>Pk bills_pkey ( id ) </title></use><a xlink:href='#public.bills_id'><text id='public.bills.id' x='67' y='87' onmouseover="hghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id'])" onmouseout="uhghl(['bill_items_bill_items_bill_id_foreign','public.bill_items.bill_id'])">id</text><title>id
 * serial</title></a>
-<text x='192' y='120' text-anchor='end' class='colType'>serial</text><a xlink:href='#public.bills.id'><use id='ref' x='196' y='108' xlink:href='#ref'/><title>Referred by bill_items ( bill_id -&gt; id ) </title></a>
-  <use id='nn' x='50' y='125' xlink:href='#nn'/><a xlink:href='#public.bills_user_id'><text id='public.bills.user_id' x='67' y='135' onmouseover="hghl(['bills_bills_user_id_foreign','public.users.id'])" onmouseout="uhghl(['bills_bills_user_id_foreign','public.users.id'])">user_id</text><title>user_id
+<a xlink:href='#public.bills.id'><use id='ref' x='132' y='76' xlink:href='#ref'/><title>Referred by bill_items ( bill_id -&gt; id ) </title></a>
+  <use id='nn' x='50' y='93' xlink:href='#nn'/><a xlink:href='#public.bills_user_id'><text id='public.bills.user_id' x='67' y='103' onmouseover="hghl(['bills_bills_user_id_foreign','public.users.id'])" onmouseout="uhghl(['bills_bills_user_id_foreign','public.users.id'])">user_id</text><title>user_id
 * integer</title></a>
-<text x='192' y='136' text-anchor='end' class='colType'>integer</text><a xlink:href='#public.bills.user_id'><use id='fk' x='196' y='124' xlink:href='#fk'/><title>References users ( user_id -&gt; id ) </title></a>
-  <use id='nn' x='50' y='141' xlink:href='#nn'/><a xlink:href='#public.bills_customer'><text id='public.bills.customer' x='67' y='151'>customer</text><title>customer
+<a xlink:href='#public.bills.user_id'><use id='fk' x='132' y='92' xlink:href='#fk'/><title>References users ( user_id -&gt; id ) </title></a>
+  <use id='nn' x='50' y='109' xlink:href='#nn'/><a xlink:href='#public.bills_customer'><text id='public.bills.customer' x='67' y='119'>customer</text><title>customer
 * varchar(150)</title></a>
-<text x='192' y='152' text-anchor='end' class='colType'>varchar(150)</text>  <use id='nn' x='50' y='157' xlink:href='#nn'/><a xlink:href='#public.bills_created_at'><text id='public.bills.created_at' x='67' y='167'>created_at</text><title>created_at
+<text x='141' y='116' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='125' xlink:href='#nn'/><a xlink:href='#public.bills_created_at'><text id='public.bills.created_at' x='67' y='135'>created_at</text><title>created_at
 * timestamptz default CURRENT_TIMESTAMP</title></a>
-<text x='192' y='168' text-anchor='end' class='colType'>timestamptz</text>
+<text x='141' y='132' text-anchor='end' class='colType'>d</text>
 <!-- == Table 'users' == -->
-<rect class='entity' style='stroke:#1E498F' x='48' y='248' width='160' height='112' rx='8' ry='8' />
-<path d='M 48 276 L 48 256 Q 48 248 56 248 L 200 248 Q 208 248 208 256 L 208 276 L48 276 ' style='fill:url(#tbg_BED3F4);stroke:1;stroke-opacity:0.1;' />
-<rect class='entity' x='48' y='248' width='160' height='112' rx='8' ry='8' style='fill:none;stroke:#DADCE1'/>
-<a xlink:href='#public.users'><text x='110' y='268' >users</text><title>Table public.users</title></a>
-  <use id='nn' x='50' y='285' xlink:href='#nn'/><use id='pk' x='50' y='284' xlink:href='#pk'><title>Pk users_pkey ( id ) </title></use><a xlink:href='#public.users_id'><text id='public.users.id' x='67' y='295' onmouseover="hghl(['bills_bills_user_id_foreign','public.bills.user_id'])" onmouseout="uhghl(['bills_bills_user_id_foreign','public.bills.user_id'])">id</text><title>id
+<rect class='entity' style='stroke:#1E498F' x='48' y='216' width='96' height='112' rx='8' ry='8' />
+<path d='M 48 244 L 48 224 Q 48 216 56 216 L 136 216 Q 144 216 144 224 L 144 244 L48 244 ' style='fill:url(#tbg_BED3F4);stroke:1;stroke-opacity:0.1;' />
+<rect class='entity' x='48' y='216' width='96' height='112' rx='8' ry='8' style='fill:none;stroke:#DADCE1'/>
+<a xlink:href='#public.users'><text x='78' y='236' >users</text><title>Table public.users</title></a>
+  <use id='nn' x='50' y='253' xlink:href='#nn'/><use id='pk' x='50' y='252' xlink:href='#pk'><title>Pk users_pkey ( id ) </title></use><a xlink:href='#public.users_id'><text id='public.users.id' x='67' y='263' onmouseover="hghl(['bills_bills_user_id_foreign','public.bills.user_id'])" onmouseout="uhghl(['bills_bills_user_id_foreign','public.bills.user_id'])">id</text><title>id
 * serial</title></a>
-<text x='192' y='296' text-anchor='end' class='colType'>serial</text><a xlink:href='#public.users.id'><use id='ref' x='196' y='284' xlink:href='#ref'/><title>Referred by bills ( user_id -&gt; id ) </title></a>
-  <use id='nn' x='50' y='301' xlink:href='#nn'/><use id='unq' x='50' y='300' xlink:href='#unq'><title>Unq users_auth_id_unique ( auth_id ) </title></use><a xlink:href='#public.users_auth_id'><text id='public.users.auth_id' x='67' y='311'>auth_id</text><title>auth_id
+<a xlink:href='#public.users.id'><use id='ref' x='132' y='252' xlink:href='#ref'/><title>Referred by bills ( user_id -&gt; id ) </title></a>
+  <use id='nn' x='50' y='269' xlink:href='#nn'/><use id='unq' x='50' y='268' xlink:href='#unq'><title>Unq users_auth_id_unique ( auth_id ) </title></use><a xlink:href='#public.users_auth_id'><text id='public.users.auth_id' x='67' y='279'>auth_id</text><title>auth_id
 * varchar(255)</title></a>
-<text x='192' y='312' text-anchor='end' class='colType'>varchar(255)</text>  <use id='nn' x='50' y='317' xlink:href='#nn'/><use id='unq' x='50' y='316' xlink:href='#unq'><title>Unq users_username_unique ( username ) </title></use><a xlink:href='#public.users_username'><text id='public.users.username' x='67' y='327'>username</text><title>username
+<text x='141' y='276' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='285' xlink:href='#nn'/><use id='unq' x='50' y='284' xlink:href='#unq'><title>Unq users_username_unique ( username ) </title></use><a xlink:href='#public.users_username'><text id='public.users.username' x='67' y='295'>username</text><title>username
 * varchar(150)</title></a>
-<text x='192' y='328' text-anchor='end' class='colType'>varchar(150)</text>  <use id='nn' x='50' y='333' xlink:href='#nn'/><use id='unq' x='50' y='332' xlink:href='#unq'><title>Unq users_email_unique ( email ) </title></use><a xlink:href='#public.users_email'><text id='public.users.email' x='67' y='343'>email</text><title>email
+<text x='141' y='292' text-anchor='end' class='colType'>t</text>  <use id='nn' x='50' y='301' xlink:href='#nn'/><use id='unq' x='50' y='300' xlink:href='#unq'><title>Unq users_email_unique ( email ) </title></use><a xlink:href='#public.users_email'><text id='public.users.email' x='67' y='311'>email</text><title>email
 * varchar(150)</title></a>
-<text x='192' y='344' text-anchor='end' class='colType'>varchar(150)</text>
+<text x='141' y='308' text-anchor='end' class='colType'>t</text>
 </g></svg></div>
 <div class='container'>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='public.bill_items' onclick='window.scrollTo(72, 80);return false;' style='cursor:pointer;'><h5 class='card-title'>Table bill_items</h5></a>
+<div class='card'><div class='card-body'><a name='public.bill_items' onclick='window.scrollTo(60, 48);return false;' style='cursor:pointer;'><h5 class='card-title'>Table bill_items</h5></a>
 <table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
 <tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
@@ -370,7 +365,7 @@ bills ref users ( user_id -&gt; id )</title></path>
 </table></div></div>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='public.bills' onclick='window.scrollTo(60, 80);return false;' style='cursor:pointer;'><h5 class='card-title'>Table bills</h5></a>
+<div class='card'><div class='card-body'><a name='public.bills' onclick='window.scrollTo(60, 48);return false;' style='cursor:pointer;'><h5 class='card-title'>Table bills</h5></a>
 <table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
 <tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
@@ -415,7 +410,7 @@ bills ref users ( user_id -&gt; id )</title></path>
 </table></div></div>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='public.users' onclick='window.scrollTo(60, 256);return false;' style='cursor:pointer;'><h5 class='card-title'>Table users</h5></a>
+<div class='card'><div class='card-body'><a name='public.users' onclick='window.scrollTo(60, 224);return false;' style='cursor:pointer;'><h5 class='card-title'>Table users</h5></a>
 <table class='table table-sm table-bordered small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
 <tr><th style='width:5%'>Idx</th><th style='width:20%'>Field Name</th><th style='width:23%'>Data Type</th><th style='width:52%'>Description</th></tr>
