@@ -29,6 +29,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
+  * [Documentation](#documentation)
 * [License](#license)
 * [Contact](#contact)
 
