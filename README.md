@@ -45,7 +45,7 @@ The app support:
 *  Creation
 *  Deleting
 *  Preview
-*  Print pdf
+*  Pdf print
 
 ### Built With
 
