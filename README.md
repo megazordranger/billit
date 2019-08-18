@@ -52,6 +52,15 @@ The app support:
 * [Express](https://expressjs.com/)
 * [Apollo](https://www.apollographql.com/)
 
+### Documentation
+
+* [Client](https://megazordranger.github.io/billit/client-documentation/)
+* [Authentication GraphQl Schema](https://megazordranger.github.io/billit/auth-graphql-schema/)
+* [Application GraphQl Schema](https://megazordranger.github.io/billit/app-graphql-schema/)
+* [Authentication DB Schema - MongoDB](https://megazordranger.github.io/billit/auth-db-schema/authx.html)
+* [Application DB Schema- PostgreSQL](https://megazordranger.github.io/billit/app-graphql-schema/)
+* [Original App Mockups](https://megazordranger.github.io/billit/mockups/billit.pdf)
+
 
 
 <!-- LICENSE -->
