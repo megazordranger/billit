@@ -52,6 +52,9 @@ The app support:
 * [Angular](https://angular.io/)
 * [Express](https://expressjs.com/)
 * [Apollo](https://www.apollographql.com/)
+* [Knex.js](http://knexjs.org/)
+* [Objection.js](https://vincit.github.io/objection.js/)
+* [Mongoose](https://mongoosejs.com/)
 
 ### Documentation
 
