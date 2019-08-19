@@ -9,10 +9,15 @@
     color: #555;
 }
 
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .preview .invoice-box {
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .invoice-box table {
@@ -106,8 +111,15 @@ img {
     margin-right: 30px;
 }
 
-/** borders rows**/
+/** borders rows **/
 
 .boders td:not(:first-child) {
     border-left: 1px solid #eee;
+}
+
+/** close button **/
+
+.close {
+    text-align: end;
+    color: #aaa;
 }

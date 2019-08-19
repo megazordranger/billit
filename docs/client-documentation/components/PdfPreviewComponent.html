@@ -153,6 +153,9 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#close">close</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
                             <li>
@@ -273,6 +276,47 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="close"></a>
+                    <span class="name">
+                        <b>
+                            close
+                        </b>
+                        <a href="#close"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>close()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/features/dashboard/pdf-preview/pdf-preview.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Close modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -501,6 +545,13 @@ export class PdfPreviewComponent implements OnInit {
       totalTaxes
     }
   }
+
+  /**
+   * Close modal
+   */
+  close() {
+    this.ref.close();
+  }
 }
 </code></pre>
     </div>
@@ -509,6 +560,7 @@ export class PdfPreviewComponent implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container preview&quot;&gt;
     &lt;nb-card class&#x3D;&quot;shadow&quot;&gt;
         &lt;div class&#x3D;&quot;invoice-box&quot; id&#x3D;&quot;invoice&quot;&gt;
+            &lt;div class&#x3D;&quot;close&quot; (click)&#x3D;&quot;close()&quot;&gt;x&lt;/div&gt;
             &lt;table cellpadding&#x3D;&quot;0&quot; cellspacing&#x3D;&quot;0&quot;&gt;
             &lt;tbody&gt;
                 &lt;tr class&#x3D;&quot;top&quot;&gt;
@@ -600,10 +652,15 @@ export class PdfPreviewComponent implements OnInit {
     color: #555;
 }
 
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .preview .invoice-box {
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .invoice-box table {
@@ -697,10 +754,17 @@ img {
     margin-right: 30px;
 }
 
-/** borders rows**/
+/** borders rows **/
 
 .boders td:not(:first-child) {
     border-left: 1px solid #eee;
+}
+
+/** close button **/
+
+.close {
+    text-align: end;
+    color: #aaa;
 }</code></pre>
     </div>
 
@@ -729,7 +793,7 @@ img {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container preview">    <nb-card class="shadow">        <div class="invoice-box" id="invoice">            <table cellpadding="0" cellspacing="0">            <tbody>                <tr class="top">                    <td colspan="6">                        <table>                            <tr>                                <td class="title">                                    <img src="assets/img/logo.png">                                </td>                                <td>                                    Invoice #: {{ bill.id }}<br>                                    Created: {{ bill.created_at | date:\'dd/MM/yyyy\' }}<br>                                    Customer: {{ bill.customer }}                                </td>                            </tr>                        </table>                    </td>                </tr>                                <tr class="information">                    <td colspan="4">                        <table>                            <tr></tr>                        </table>                    </td>                </tr>                                <tr class="heading">                    <td>#</td>                    <td>Item</td>                    <td>Price</td>                    <td>Tax</td>                    <td>Number of items</td>                    <td>Total item</td>                </tr>                                <tr  *ngFor="let item of bill.items; let i = index" [ngClass]="{\'boders item\': true, \'last\':  bill.items.length === (i+1)}">                    <td>{{ i+1 }}</td>                    <td>{{ item.name }}</td>                    <td>$ {{ item.price | number:\'.2-2\':\'es-ES\' }}</td>                    <td>% {{ item.tax | number:\'2.2-2\':\'es-ES\' }}</td>                    <td>{{ item.numberItems | number:\'1.\':\'es-ES\' }}</td>                    <td>$ {{ item.totalItem | number:\'2.2-2\':\'es-ES\' }}</td>                </tr>                                <tr>                    <td colspan="4">                        <br>                    </td>                </tr>                <tr class="total">                    <td colspan="4"></td>                    <td colspan="2">                        Sub Total: $ {{ bill.subTotal | number:\'.2-2\':\'es-ES\' }}                    </td>                </tr>                <tr class="total">                    <td colspan="4"></td>                    <td colspan="2">                        Total Taxes: $ {{ bill.totalTaxes | number:\'.2-2\':\'es-ES\' }}                    </td>                </tr>                <tr class="total">                    <td colspan="4"></td>                    <td colspan="2">                        Total: $ {{ bill.total | number:\'.2-2\':\'es-ES\' }}                    </td>                </tr>            </tbody>            </table>        </div>    </nb-card></div> </div>'
+        var COMPONENT_TEMPLATE = '<div><div class="container preview">    <nb-card class="shadow">        <div class="invoice-box" id="invoice">            <div class="close" (click)="close()">x</div>            <table cellpadding="0" cellspacing="0">            <tbody>                <tr class="top">                    <td colspan="6">                        <table>                            <tr>                                <td class="title">                                    <img src="assets/img/logo.png">                                </td>                                <td>                                    Invoice #: {{ bill.id }}<br>                                    Created: {{ bill.created_at | date:\'dd/MM/yyyy\' }}<br>                                    Customer: {{ bill.customer }}                                </td>                            </tr>                        </table>                    </td>                </tr>                                <tr class="information">                    <td colspan="4">                        <table>                            <tr></tr>                        </table>                    </td>                </tr>                                <tr class="heading">                    <td>#</td>                    <td>Item</td>                    <td>Price</td>                    <td>Tax</td>                    <td>Number of items</td>                    <td>Total item</td>                </tr>                                <tr  *ngFor="let item of bill.items; let i = index" [ngClass]="{\'boders item\': true, \'last\':  bill.items.length === (i+1)}">                    <td>{{ i+1 }}</td>                    <td>{{ item.name }}</td>                    <td>$ {{ item.price | number:\'.2-2\':\'es-ES\' }}</td>                    <td>% {{ item.tax | number:\'2.2-2\':\'es-ES\' }}</td>                    <td>{{ item.numberItems | number:\'1.\':\'es-ES\' }}</td>                    <td>$ {{ item.totalItem | number:\'2.2-2\':\'es-ES\' }}</td>                </tr>                                <tr>                    <td colspan="4">                        <br>                    </td>                </tr>                <tr class="total">                    <td colspan="4"></td>                    <td colspan="2">                        Sub Total: $ {{ bill.subTotal | number:\'.2-2\':\'es-ES\' }}                    </td>                </tr>                <tr class="total">                    <td colspan="4"></td>                    <td colspan="2">                        Total Taxes: $ {{ bill.totalTaxes | number:\'.2-2\':\'es-ES\' }}                    </td>                </tr>                <tr class="total">                    <td colspan="4"></td>                    <td colspan="2">                        Total: $ {{ bill.total | number:\'.2-2\':\'es-ES\' }}                    </td>                </tr>            </tbody>            </table>        </div>    </nb-card></div> </div>'
     var COMPONENTS = [{'name': 'ActionsCellComponent', 'selector': 'app-actions-cell'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BilledCellComponent', 'selector': 'app-billed-cell'},{'name': 'ConfirmDeleteComponent', 'selector': 'app-confirm-delete'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CookiePolicyComponent', 'selector': 'app-cookie-policy'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DisclaimerComponent', 'selector': 'app-disclaimer'},{'name': 'FeaturesComponent', 'selector': 'app-features'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NewbillComponent', 'selector': 'app-newbill'},{'name': 'PdfPreviewComponent', 'selector': 'app-pdf-preview'},{'name': 'PoliciesComponent', 'selector': 'app-policies'},{'name': 'PrivacyPolicyComponent', 'selector': 'app-privacy-policy'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'TermAndConditionsComponent', 'selector': 'app-term-and-conditions'},{'name': 'UserPopoverComponent', 'selector': 'ngx-user-popover'},{'name': 'ViewTitleComponent', 'selector': 'app-view-title'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PdfPreviewComponent'};

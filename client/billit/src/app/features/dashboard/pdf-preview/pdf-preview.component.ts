@@ -68,4 +68,11 @@ export class PdfPreviewComponent implements OnInit {
       totalTaxes
     }
   }
+
+  /**
+   * Close modal
+   */
+  close() {
+    this.ref.close();
+  }
 }
