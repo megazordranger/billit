@@ -30,7 +30,7 @@
     "graphql-constraint-directive": "^1.4.0",
     "graphql-rate-limit-directive": "^1.1.0",
     "helmet": "^3.18.0",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.3.14",
     "mongoose-findorcreate": "^3.0.0",
     "moongoose": "0.0.5",
