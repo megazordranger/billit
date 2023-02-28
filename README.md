@@ -8,9 +8,9 @@
 <p align="center">
     Bill generator
 </p>
-<p align="center">
+<!-- <p align="center">
     <a href="https://billit.tk/" target="_blank">Live Demo</a>
-</p>
+</p> -->
 
 
 
